@@ -1,0 +1,89 @@
+/* 색감 :#5CE5CF header, main, footer 비율 : 2:6:2*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------- 초기화 ----------------- */
+
+header,
+main,
+footer{
+  width: calc(100% * .8);
+  margin: auto;
+}
+header {
+  background-color: #5CE5CF;
+  height: calc(100vh * .2);
+}
+main{
+  background-color: deeppink;
+  height: calc(100vh * .6);
+}
+footer {
+  background-color: darkgray;
+  height: calc(100vh * .2);
+}
+
+.logo,
+.search,
+.mypage,
+.cart,
+.like {
+  display: inline-block;
+}
+
+/* ------------ 기본 세팅 --------------- */
+
+/* 
+.logo{
+} */
+
+.search_bar{
+  padding: 10px;
+  width: 500px;
+
+}
+
+/* ----------- 로그인 배너 --------------- */
+ul {
+  list-style: none;
+}
+
+.login {
+  display: flex;
+  flex-direction: row-reverse;
+  /* position: absolute; */
+  right: 0;
+  margin: 0 50px 0 0;
+}
+
+.mypage {
+  background: url(./Main_page/image/user\ icon-1.png) center/100% 100%;
+  width: 40px;
+  line-height: 40px;
+  padding: 10px;
+  text-indent: -9999px;
+  margin: 0 10px 0 0;
+  
+}
+
+.cart {
+  background: url(./Main_page/image/cart.png) center/100% 100%;
+  width: 55px;
+  line-height: 55px;
+  padding: 10px;
+  text-indent: -9999px;
+  margin: 0 10px 0 0;
+}
+
+.like {
+  background: url(./Main_page/image/heart.png) center/100% 100%;
+  width: 40px;
+  line-height: 40px;
+  padding: 10px;
+  text-indent: -9999px;
+  margin: 0 10px 0 0;
+
+}
