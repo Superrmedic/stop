@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: paybooc-Bold;
+    width: 100%;
+    height: 100%;
+    display: block;
+    min-width: 1000px;
+}
+
+/* ============================== */
+/* main part */
+main {
+    margin: 50px 0 50px 0;
+}
+
+strong {
+    font-size: 20px;
+}
+
+main hr {
+    border: 0px;
+    height: 1px;
+    background-color: #CACACA;
+}
+
+.shopproduct {
+    display: flex;
+    width: calc(1920px * .7);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.shopdetail_all {
+    position: relative;
+    width: calc(1920px * .7 * .4);
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.shopimg_a {
+    width: calc(1920px * .7 * .6);
+}
+
+/* 상품 이미지 */
+.shopimg_a {
+    position: relative;
+    overflow: hidden;
+}
+
+.mainbear {
+    width: 500px;
+    height: 500px;
+    margin-left: 60px;
+}
+
+.smallbear_1,
+.smallbear_2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 15%;
+}
+
+.smallbear_1 {
+    bottom: 5px;
+}
+
+.smallbear_2 {
+    bottom: 120px;
+}
+
+/* 상품 판매 name, details */
+.shopname_a,
+.shopdetail_a,
+.shopselect,
+.totalpay,
+.shopbuttons {
+    padding: 15px;
+}
+
+dt,
+dd {
+    display: inline-block;
+    padding: 10px 10px 10px 0px;
+}
+
+/* 상품 선택*/
+.shopselect {
+    padding: 0px 10px 10px 20px;
+}
+
+select {
+    margin-left: 15px;
+    width: 300px;
+    padding: 5px 0;
+}
+
+/* 상품 금액 */
+.totalpay .charge {
+    margin-left: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #5CE5CF;
+}
+
+/* 버튼 */
+.shoppay_bt,
+.shopcart_bt,
+.shoplike_bt {
+    padding: 20px;
+    color: white;
+    border: 0;
+    font-family: paybooc-Bold;
+    font-size: 18px;
+}
+
+.shoppay_bt {
+    width: calc(1920px * .7 * .4 - 15px);
+    background-color: #5CE5CF;
+    margin: 0 10px 10px 0;
+}
+
+.shopcart_bt,
+.shoplike_bt {
+    position: absolute;
+    width: calc((1920px * .7 * .4 - 30px)/2);
+    background-color: #CACACA;
+}
+
+.shoplike_bt {
+    right: 0;
+    margin: 0 0 0 10px;
+}
+
+/* 버튼 호버 */
+.shoppay_bt:hover {
+    background-color: #43a796;
+}
+
+.shopcart_bt:hover,
+.shoplike_bt:hover {
+    background-color: #999999;
+}
+
+.shopimg_a .mainbear:hover {
+    transform: scale(1.5);
+    transition: all 0.2s linear;
+}
+
+/* ========================================= */
+/* nav part */
+
+nav {
+    width: calc(1920px * .8);
+    margin: auto;
+}
+
+nav hr {
+    border: 0px;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.productinfo_detail {
+    padding: 20px;
+    border-bottom: solid 1px #d6d6d6;
+    border-top: solid 1px #d6d6d6;
+}
+
+.productinfo_detail li {
+    display: inline;
+    padding: 20px;
+    margin-left: 120px;
+}
+
+.productinfo_detail li:hover {
+    color: #5CE5CF;
+    border-bottom: 4px solid #5CE5CF;
+}
+
+/* ======================================== */
+/* aside part */
+
+aside {
+    width: calc(1920px * .8);
+    margin: auto;
+    padding: 30px;
+}
+
+.related_detail {
+    display: flex;
+}
+
+.related_detail img {
+    width: 300px;
+    height: 300px;
+}
+
+.related_detail_1 {
+    display: block;
+}
