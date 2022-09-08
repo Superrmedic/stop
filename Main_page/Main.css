@@ -91,32 +91,32 @@ header ul.login a {
 
 /* ----------- .category 부분 --------------- */
 
-nav>div>ul.category {
+.category_bar>div>ul.category {
   background-color: #ffe4c4;
   display: flex;
   justify-content: center;
   border-radius: 5px;
 }
 
-nav ul>li {
+.category_bar ul>li {
   position: relative;
   width: 20%;
   text-align: center;
 }
 
-nav>div>ul.category>li {
+.category_bar>div>ul.category>li {
   float: left;
   line-height: 50px;
   padding: 10px;
 }
 
-nav::after {
+.category_bar::after {
   content: "";
   display: block;
   clear: left;
 }
 
-nav ul ul {
+.category_bar ul ul {
   display: none;
   position: absolute;
   background-color: violet;
@@ -127,7 +127,7 @@ nav ul ul {
 }
 
 
-nav ul>li:hover ul {
+.category_bar ul>li:hover ul {
   display: block;
 }
 
