@@ -33,7 +33,6 @@ header div.logo {
   margin-right: 40px;
 }
 
-header div a
 /* ----------- .search 부분 --------------- */
 header div.search {
   flex: 1;
@@ -46,7 +45,8 @@ header div.search input {
   min-width: 400px;
   height: 100%;
   background-color: rgb(233, 231, 231);
-  padding: 10px;
+  /* padding: 10px; */
+  padding-left: 20px;
   box-sizing: border-box;
   border: 2px solid #5ce5cf;
   border-radius: 30px;
@@ -95,6 +95,7 @@ nav>div>ul.category {
   background-color: #ffe4c4;
   display: flex;
   justify-content: center;
+  border-radius: 5px;
 }
 
 nav ul>li {
@@ -105,7 +106,7 @@ nav ul>li {
 
 nav>div>ul.category>li {
   float: left;
-  margin-top: 20px;
+  line-height: 50px;
   padding: 10px;
 }
 
@@ -128,7 +129,6 @@ nav ul ul {
 
 nav ul>li:hover ul {
   display: block;
-
 }
 
 /* ----------- .main 부분 --------------- */
@@ -138,5 +138,3 @@ main>.big_box {
   border: 1px solid;
   text-align: center;
 }
-
-/* main>.small_box {} */
