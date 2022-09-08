@@ -10,7 +10,7 @@ main,
 footer {
   width: 80%;
   margin: auto;
-  min-width: 1000px;
+  min-width: 1500px;
 }
 
 ul {
@@ -41,11 +41,10 @@ header div.search {
 
 header div.search input {
   all: unset;
-  width: 80%;
+  width: 60%;
   min-width: 400px;
   height: 100%;
-  background-color: rgb(233, 231, 231);
-  /* padding: 10px; */
+  background-color: white;
   padding-left: 20px;
   box-sizing: border-box;
   border: 2px solid #5ce5cf;
@@ -91,8 +90,16 @@ header ul.login a {
 
 /* ----------- .category 부분 --------------- */
 
+.category_bar ul.category {
+  box-sizing: border-box;
+}
+
+.category_bar ul.category>li {
+  border-bottom: 5px solid white;
+}
+
 .category_bar>div>ul.category {
-  background-color: #ffe4c4;
+  /* background-color: #ffe4c4; */
   display: flex;
   justify-content: center;
   border-radius: 5px;
@@ -102,6 +109,20 @@ header ul.login a {
   position: relative;
   width: 20%;
   text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.category_bar ul.category>li>a {
+  color: black;
+}
+
+.category_bar ul.category>li:hover>a {
+  color: #5ce5cf;
+}
+
+.category_bar ul>li:hover {
+  border-bottom-color: #5ce5cf;
 }
 
 .category_bar>div>ul.category>li {
@@ -119,16 +140,24 @@ header ul.login a {
 .category_bar ul ul {
   display: none;
   position: absolute;
-  background-color: violet;
-  top: 100%;
+  background-color: white;
+  color: gray;
+  top: calc(100% + 5px);
   left: 0;
   width: 100%;
   padding: 10px 0;
+  /* vertical-align: middle; */
+  text-align: center;
+}
+
+.category_bar ul.category ul li {
+  width: 100%;
 }
 
 
 .category_bar ul>li:hover ul {
   display: block;
+  z-index: 1;
 }
 
 /* ----------- .main 부분 --------------- */
