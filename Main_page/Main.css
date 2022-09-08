@@ -205,7 +205,7 @@ main>.small_box>.small4 {
   background: url(./image/small_box4.PNG) center/100% 100%;
 }
 
-/* -----------------.article부분-------------------- */
+/* -----------------article부분-------------------- */
 
 article h1>span {
   display: flex;
@@ -227,8 +227,40 @@ article .best_goods>li {
 
 article .best_goods div>a>img {
   width: 85%;
+  margin-bottom: 50px;
 }
 
 article .best_goods div>a>.kitty {
   width: 90%;
 }
+
+/* -----------------section부분-------------------- */
+
+section h1>span {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  font-size: 30px;
+}
+
+section .best_goods {
+  /* border: 1px solid; */
+  margin: 0 0 0 50px;
+  display: flex;
+}
+
+section .best_goods>li {
+  width: 32%;
+  margin: auto;
+}
+
+section .best_goods div>a>img {
+  width: 85%;
+  margin-bottom: 50px;
+}
+
+section .best_goods div>a>.kitty {
+  width: 90%;
+}
+
+/* -----------------footer부분-------------------- */
