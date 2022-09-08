@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page_header{
+    width: 100vw;
+    height: 20vh;
+    background-color: #5ce5cf
+}
+
+main{
+    width: 100vw;
+    height: 70vh;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: darkgray;
+}
+/* ----------------------------------- */
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav{
+    width: 100px;
+    margin-top: 20px;
+}
+
+.searchbar{
+    flex-grow: 2;
+}
+
+/* ------------------------------------- */
+.inner_box{
+    width: 650px;
+    height: 660px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.inner_title{
+    
+}
+
+
