@@ -1,89 +1,142 @@
-/* 색감 :#5CE5CF header, main, footer 비율 : 2:6:2*/
-
+/* ------------ 기본 세팅 --------------- */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
-
-/* ------------- 초기화 ----------------- */
 
 header,
+nav,
 main,
-footer{
-  width: calc(100% * .8);
-  margin: auto;
-}
-header {
-  background-color: #5CE5CF;
-  height: calc(100vh * .2);
-}
-main{
-  background-color: deeppink;
-  height: calc(100vh * .6);
-}
 footer {
-  background-color: darkgray;
-  height: calc(100vh * .2);
+  width: 80%;
+  margin: auto;
+  min-width: 1000px;
 }
 
-.logo,
-.search,
-.mypage,
-.cart,
-.like {
-  display: inline-block;
-}
-
-/* ------------ 기본 세팅 --------------- */
-
-/* 
-.logo{
-} */
-
-.search_bar{
-  padding: 10px;
-  width: 500px;
-
-}
-
-/* ----------- 로그인 배너 --------------- */
 ul {
   list-style: none;
 }
 
-.login {
+a {
+  text-decoration: none;
+}
+
+/* ----------- .logo 부분 --------------- */
+header {
   display: flex;
-  flex-direction: row-reverse;
-  /* position: absolute; */
-  right: 0;
-  margin: 0 50px 0 0;
+  flex-direction: row;
+  padding: 20px;
+  /* background-color: #5ce5cf; */
+}
+
+header div.logo {
+  margin-right: 40px;
+}
+
+header div a
+/* ----------- .search 부분 --------------- */
+header div.search {
+  flex: 1;
+  margin-right: 40px;
+}
+
+header div.search input {
+  all: unset;
+  width: 80%;
+  min-width: 400px;
+  height: 100%;
+  background-color: rgb(233, 231, 231);
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #5ce5cf;
+  border-radius: 30px;
+}
+
+/* ----------- .login 부분 --------------- */
+header ul.login {
+  display: flex;
+  flex-direction: row;
+  min-width: 50px;
+}
+
+header ul.login li:not(:first-child) {
+  margin-left: 10px;
+}
+
+header ul.login a {
+  display: block;
+  width: 50px;
+  height: 55px;
+  text-indent: -9999em;
 }
 
 .mypage {
-  background: url(./Main_page/image/user\ icon-1.png) center/100% 100%;
-  width: 40px;
-  line-height: 40px;
-  padding: 10px;
-  text-indent: -9999px;
-  margin: 0 10px 0 0;
-  
+  background: url(./image/user\ icon-1.png) center/100% 100%;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
 }
 
 .cart {
-  background: url(./Main_page/image/cart.png) center/100% 100%;
-  width: 55px;
-  line-height: 55px;
-  padding: 10px;
-  text-indent: -9999px;
-  margin: 0 10px 0 0;
+  background: url(./image/cart.png) center/100% 100%;
+  margin-top: 5px;
 }
 
 .like {
-  background: url(./Main_page/image/heart.png) center/100% 100%;
-  width: 40px;
-  line-height: 40px;
+  background: url(./image/heart.png) center/100% 100%;
+  width: 45px;
+  height: 45px;
+  margin-top: 12px;
+}
+
+/* ----------- .category 부분 --------------- */
+
+nav>div>ul.category {
+  background-color: #ffe4c4;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul>li {
+  position: relative;
+  width: 20%;
+  text-align: center;
+}
+
+nav>div>ul.category>li {
+  float: left;
+  margin-top: 20px;
   padding: 10px;
-  text-indent: -9999px;
-  margin: 0 10px 0 0;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: violet;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+
+nav ul>li:hover ul {
+  display: block;
 
 }
+
+/* ----------- .main 부분 --------------- */
+main>.big_box {
+  margin: 50px auto;
+  line-height: 400px;
+  border: 1px solid;
+  text-align: center;
+}
+
+/* main>.small_box {} */
