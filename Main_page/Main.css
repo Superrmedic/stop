@@ -249,7 +249,7 @@ article .best_goods div>a>.light_1 {
   left: 0;
 }
 
-article .best_goods div>a>.kitty_1 {
+article .best_goods div>a>.magnet_1 {
   opacity: 0;
   position: absolute;
   left: 0;
@@ -263,11 +263,6 @@ article .best_goods div>a:hover>.kitty_1 {
   opacity: 1;
 }
 
-article .best_goods div>a>.magnet_1 {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-}
 
 article .best_goods div>a:hover>.light {
   opacity: 0;
@@ -287,6 +282,10 @@ article .best_goods div>a:hover>.magnet_1 {
 
 /* -----------------section부분-------------------- */
 section>.best {
+  position: relative;
+}
+
+section .best_goods div {
   position: relative;
 }
 
@@ -315,6 +314,49 @@ section .best_goods>li {
 section .best_goods div>a>img {
   width: 80%;
   margin-bottom: 50px;
+}
+
+section .best_goods div>a>.bear_1 {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+section .best_goods div>a>.bear_2 {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+section .best_goods div>a>.bear_3 {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+section .best_goods div>a:hover>.bear_1 {
+  opacity: 0;
+}
+
+section .best_goods div>a:hover>.bear_1_1 {
+  opacity: 1;
+}
+
+
+section .best_goods div>a:hover>.bear_2 {
+  opacity: 0;
+}
+
+section .best_goods div>a:hover>.bear_2_1 {
+  opacity: 1;
+}
+
+section .best_goods div>a:hover>.bear_3 {
+  opacity: 0;
+}
+
+section .best_goods div>a:hover>.bear_3_1 {
+  opacity: 1;
 }
 
 
