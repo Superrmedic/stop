@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/required_info.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>
+        <a href="#">PSYC</a>
+      </h1>
+    </div>
+    <div class="search">
+      <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~~">
+    </div>
+    <ul class="login">
+      <li class="mypage"><a href="">로그인</a></li>
+      <li class="cart"><a href="">장바구니</a></li>
+      <li class="like"><a href="">좋아요</a></li>
+    </ul>
+    </div>
+  </header>
+  <nav class="category_bar">
+    <div>
+      <ul class="category">
+        <li class="cate_Best"><a href="#Best">BEST</a>
+        </li>
+        <li class="cate_New"><a href="#New">NEW</a></li>
+        <li class="cate_Acc"><a href="">ACC</a>
+          <ul>
+            <li><a href="">그립톡</a></li>
+            <li><a href="">핸드폰 케이스</a></li>
+            <li><a href="">키링</a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </li>
+        <li class="cate_Kids"><a href="">KIDS</a>
+          <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </li>
+        <li class="cate_Toy"><a href="">TOY</a>
+          <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <hr>
+    <main>
+        <div class="inner_box">
+            <p class="inner_title">PSYC에 오신것을 환영합니다!</p>
+            <fieldset class="input_req_info">
+              <p class="req_info_title">필수정보입력</p>
+              
+              <label><sub>이름</sub>
+                <input type="text" minlength="2" maxlength="10" required>
+              </label>
+              <label><sub>생년월일</sub>
+                <input class="flex_info_birth" type="text" minlength="4" maxlength="4" required>년
+                <label for="month">
+                  <select name="month" id="birth_month">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>월
+                  <input class="flex_info_birth" type="text" minlength="1" maxlength="2" required>일
+                </label>
+              </label>
+              <label><sub>아이디</sub> 
+                <input type="text" name="user_id" required>
+              </label>
+              <label><sub>비밀번호</sub> 
+                <input type="password" minlength="8" maxlength="12" placeholder="8~12자리 입력" required>
+              </label>
+              <label><sub>이메일</sub>
+                <input type="email" name="email_id">@
+
+                <select name="email_domain" id="">
+                  <option value="직접입력">직접입력</option>
+                  <option value="naver.com">naver.com</option>
+                  <option value="google.com">google.com</option>
+                  <option value="daum.net">daum.net</option>
+                  <option value="outlook.com">outlook.com</option>
+              </select>
+
+              </label>
+              <label><sub>전화번호</sub>
+                <input class="req_phone_num" type="text" value="010" size="1" readonly required>
+                <input type="text" placeholder="-없이 입력" required>
+              </label>
+              <label><sub>성별</sub>
+                <input type="checkbox">
+              </label>
+            </fieldset>
+              <div class="req_info_complete"><a href="#">가입하기</a></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
