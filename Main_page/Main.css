@@ -197,11 +197,12 @@ main>.fixed-banner {
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  margin: 0 0 0 1580px;
+  left: 90%;
+  margin: 0 0 0 80px;
 }
 
 main>.fixed-banner a>.right_FAQ {
-  width: 81px;
+  width: 80px;
   height: 80px;
 }
 
