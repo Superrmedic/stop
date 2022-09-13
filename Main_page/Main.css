@@ -63,32 +63,48 @@ header ul.login {
   min-width: 50px;
 }
 
-header ul.login li:not(:first-child) {
-  margin-left: 10px;
-}
 
-header ul.login>li{
+header ul.login .go_login {
   display: block;
   width: 50px;
   height: 55px;
   text-indent: -9999em;
+
 }
-header li.mypage:hvoer{
-  width: 100px;
-  height: 100px;
-  background-color: black;
+
+header ul .login_info {
+  background-color: white;
+  width: 150px;
+  display: none;
+}
+
+header ul>.mypage:hover>.login_info {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top: 100%;
+}
+
+header>ul .login_info li a {
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  display: block;
 }
 
 .mypage {
+  position: relative;
   background: url(./image/user\ icon-1.png) center/100% 100%;
   width: 45px;
   height: 45px;
   margin-top: 10px;
 }
 
+
 .cart {
   background: url(./image/cart.png) center/100% 100%;
   margin-top: 5px;
+  margin-left: 10px;
 }
 
 .like {
@@ -96,6 +112,7 @@ header li.mypage:hvoer{
   width: 45px;
   height: 45px;
   margin-top: 12px;
+  margin-left: 10px;
 }
 
 /* ----------- .category 부분 --------------- */
@@ -175,6 +192,19 @@ header li.mypage:hvoer{
 }
 
 /* ----------- .main 부분 --------------- */
+
+main>.fixed-banner {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  margin: 0 0 0 1580px;
+}
+
+main>.fixed-banner a>.right_FAQ {
+  width: 81px;
+  height: 80px;
+}
+
 main>.big_box {
   margin: 50px auto;
   line-height: 500px;
