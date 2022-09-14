@@ -276,7 +276,7 @@ main .board_table td {
 }
 
 main .board_table p {
-    background-color: #5ce5cf;
+    background-color: darkorange;
     color: white;
     width: 50px;
     height: 25px;
