@@ -194,8 +194,8 @@ main>.fixed-banner a>.right_FAQ {
 
 main>.big_box {
       margin: 50px auto;
-      line-height: 30vh;
-      background: url(../image_sample/img_top_review.jpg) center/100% 100%;
+      line-height: 500px;
+      background: url(../image/review_banner.png) 0/100% 100%;
       text-indent: -9999px;
   }
   
