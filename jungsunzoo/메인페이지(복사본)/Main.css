@@ -37,7 +37,6 @@ header {
 
 header div.logo {
   margin-right: 40px;
-  background: url(../image/banner.png);
 }
 
 /* ----------- .search 부분 --------------- */
@@ -93,7 +92,6 @@ header ul>.mypage>.login_info li:hover {
 
 header>ul .login_info li a {
   text-align: center;
-  font-size: 1.2rem;
   padding: 20px;
   color: black;
   display: block;
@@ -147,8 +145,13 @@ header>ul .login_info li a {
   font-size: 21px;
 }
 
+.category_bar ul>li li:hover {
+  background-color: rgb(197, 197, 197);
+}
+
 .category_bar ul>li li {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: initial;
 }
 
 .category_bar ul.category>li>a {
@@ -191,7 +194,6 @@ header>ul .login_info li a {
 .category_bar ul.category ul li {
   width: 100%;
 }
-
 
 .category_bar ul>li:hover ul {
   display: block;
@@ -389,19 +391,19 @@ section .best_goods div>a>img {
   margin-bottom: 50px;
 }
 
-section .best_goods div>a>.bear_1 {
+section .best_goods div>a>.bear_1_1 {
   opacity: 0;
   position: absolute;
   left: 0;
 }
 
-section .best_goods div>a>.bear_2 {
+section .best_goods div>a>.bear_2_1 {
   opacity: 0;
   position: absolute;
   left: 0;
 }
 
-section .best_goods div>a>.bear_3 {
+section .best_goods div>a>.bear_3_1 {
   opacity: 0;
   position: absolute;
   left: 0;
