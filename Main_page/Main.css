@@ -259,19 +259,19 @@ main>.small_box>div {
 }
 
 main>.small_box>.small1 {
-  background: url(./image/small_box1.PNG) center/100% 100%;
+  background: url(./image/small_box.png) center/100% 100%;
 }
 
 main>.small_box>.small2 {
-  background: url(./image/small_box2.PNG) center/100% 100%;
+  background: url(./image/small_box.png) center/100% 100%;
 }
 
 main>.small_box>.small3 {
-  background: url(./image/big_box.PNG) center/100% 100%;
+  background: url(./image/small_box.png) center/100% 100%;
 }
 
 main>.small_box>.small4 {
-  background: url(./image/small_box4.PNG) center/100% 100%;
+  background: url(./image/small_box.png) center/100% 100%;
 }
 
 .cost {
