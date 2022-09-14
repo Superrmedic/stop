@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    min-width: 1000px;
+    font-family: InfinitySans-RegularA1;
+}
+
+main {
+    margin-top: 50px;
+}
+
+main,
+section {
+    width: calc(1920px * .7);
+    padding: 20px;
+}
+
+/* ============================== */
+/* main part */
+
+main h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cartselect_info i,
+.cartselect_info ul,
+.cartselect_info li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.cartselect_info i {
+    padding-right: 0;
+}
+
+main hr {
+    border: 0px;
+    height: 1px;
+    background-color: #CACACA;
+}
+
+/* ============================== */
+/* 장바구니 상세 상품 */
+
+.cartcheckbox {
+    display: flex;
+    padding: 20px 15px;
+    line-height: 120px;
+    position: relative;
+}
+
+.cartcheckbox input {
+    margin: 10px;
+    width: 15px;
+}
+
+.cartimage1 {
+    width: 120px;
+    height: 120px;
+    margin: 0 30px;
+}
+
+.cartcheckbox span {
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cartcheckbox strong {
+    position: absolute;
+    right: 170px;
+    font-size: 18px;
+}
+
+.cartcheck_bt {
+    display: flex;
+    height: 30px;
+    border: 1px solid rgb(207, 207, 207);
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: calc((120px - 30px)/2);
+    position: absolute;
+    right: 300px;
+}
+
+.cartcheck_bt button {
+    font-size: 24px;
+    width: 50px;
+    border: 0px;
+    background-color: white;
+}
+
+.cartcheckbox i {
+    position: absolute;
+    margin-top: calc((120px - 24px)/2);
+    font-size: 24px;
+}
+
+.carticons i:nth-child(1) {
+    right: 100px;
+    color: rgb(34, 34, 34);
+}
+
+/* =============================== */
+
+.cartdeliveryinfo {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgb(170, 170, 170);
+}
+
+/* =============================== */
+/* table 결제 예정 금액 시작 */
+
+section hr {
+    border: 0px;
+    width: 1200px;
+    height: 1px;
+    background-color: #a0a0a0;
+}
+
+.cartpaybox {
+    width: 1200px;
+}
+
+.cartpaytable td,
+.cartpaytable th {
+    padding: 20px;
+}
+
+.cartpaytable td {
+    border-right: solid 1px rgb(236, 236, 236);
+    border-top: solid 1px rgb(236, 236, 236);
+}
+
+.cartpaytable .carttable3 {
+    border-right: 0;
+}
+
+.carttable1,
+.carttable2 {
+    width: 200px;
+    text-align: center;
+}
+
+.carttable3 {
+    width: 800px;
+    text-align: center;
+}
+
+tbody .carttable3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* =============================== */
+/* 결제 버튼 */
+
+.cartbuttons {
+    display: flex;
+    position: relative;
+}
+
+.cartallpay_bt,
+.cartcontin_bt {
+    width: 150px;
+    height: 35px;
+    font-family: InfinitySans-RegularA1;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.cartallpay_bt {
+    border: 0;
+    background-color: #5CE5CF;
+    color: white;
+}
+
+.cartcontin_bt {
+    border: 1px solid rgb(214, 214, 214);
+    background-color: #f8f8f8;
+    color: #696969;
+    position: absolute;
+    right: 520px;
+}
+
+.cartbuttonscenter {
+    margin-left: calc((100% - 305px)/2);
+}
+
+/* button hover */
+
+.cartallpay_bt:hover {
+    background-color: #43a796;
+}
+
+.cartcontin_bt:hover {
+    background-color: #d8d8d8;
+}
