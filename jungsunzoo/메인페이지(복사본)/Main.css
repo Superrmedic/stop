@@ -37,6 +37,7 @@ header {
 
 header div.logo {
   margin-right: 40px;
+  background: url(../image/banner.png);
 }
 
 /* ----------- .search 부분 --------------- */
