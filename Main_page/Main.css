@@ -75,7 +75,7 @@ header ul.login .go_login {
 
 header ul .login_info {
   background-color: white;
-  width: 150px;
+  width: 200px;
   display: none;
 }
 
@@ -86,9 +86,14 @@ header ul>.mypage:hover>.login_info {
   top: 100%;
 }
 
+header ul>.mypage>.login_info li:hover {
+  background-color: rgb(197, 197, 197);
+}
+
 header>ul .login_info li a {
-  font-size: 20px;
-  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
   color: black;
   display: block;
 }
@@ -438,7 +443,7 @@ footer .hr_footer {
 
 footer>.under {
   width: 1450px;
-  margin: 30px auto;
+  margin: 5px auto;
   display: flex;
 }
 
