@@ -4,17 +4,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: S-CoreDream-3Light;
-}
-
 header,
 nav,
 main,
@@ -37,27 +26,13 @@ a {
   margin-top: 10px;
 }
 
-/* ----------- .logo 부분 --------------- */
+/* ----------- .logo 부분 ---------------  */
 header {
   display: flex;
   flex-direction: row;
   padding: 10px;
   margin-top: 20px;
   /* background-color: #5ce5cf; */
-}
-
-.top_banner {
-  display: flex;
-  background-color: #5ce5cf;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
-
-.top_banner a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.1em;
 }
 
 header div.logo {
@@ -124,7 +99,6 @@ header ul>.mypage:hover>.login_info {
 }
 
 header ul>.mypage>.login_info li:hover {
-  font-weight: bold;
   background-color: rgb(197, 197, 197);
 }
 
@@ -137,7 +111,7 @@ header>ul .login_info li a {
 
 .mypage {
   position: relative;
-  background: url(../Main_page/image/user\ icon-1.png) center/80% 80% no-repeat;
+  background: url(./image/user\ icon-1.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 10px;
@@ -145,7 +119,7 @@ header>ul .login_info li a {
 
 
 .cart {
-  background: url(../Main_page/image/cart.png) center/80% 80% no-repeat;
+  background: url(./image/cart.png) center/80% 80% no-repeat;
   margin-top: 5px;
   margin-left: 10px;
   width: 55px;
@@ -153,7 +127,7 @@ header>ul .login_info li a {
 }
 
 .like {
-  background: url(../Main_page/image/heart.png) center/80% 80% no-repeat;
+  background: url(./image/heart.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 12px;
@@ -187,7 +161,6 @@ header>ul .login_info li a {
 }
 
 .category_bar ul>li li:hover {
-  font-weight: bold;
   background-color: rgb(197, 197, 197);
 }
 
@@ -340,7 +313,7 @@ article h1>span {
 
 article .best_goods {
   /* border: 1px solid; */
-  margin: 0 0 0 110px;
+  margin: 0 0 0 50px;
   display: flex;
 }
 
@@ -409,7 +382,7 @@ section h1>span {
 
 section .best_goods {
   /* border: 1px solid; */
-  margin: 0 0 50px 110px;
+  margin: 0 0 50px 50px;
   display: flex;
 }
 
