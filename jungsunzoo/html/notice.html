@@ -9,14 +9,17 @@
 </head>
 <body>
   <header>
+
     <div class="logo">
       <h1>
-        <a href="#">PSYC</a>
+        <a href="#" class="banner"><img src="../image/main_banner.png" alt="로고"></a>
       </h1>
     </div>
+
     <div class="search">
-      <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~~">
+      <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~">
     </div>
+
     <ul class="login">
       <li class="mypage">
         <ul class="login_info">
@@ -24,11 +27,9 @@
           <li><a href="../sign_on/html/terms_agree.html">회원가입</a></li>
         </ul>
       </li>
-      </a>
-      <li class="cart"><a href="" class="go_login">장바구니</a></li>
-      <li class="like"><a href="" class="go_login">좋아요</a></li>
+      <li class="cart"><a href="../project/shopping_cart.html" class="go_login">장바구니</a></li>
+      <li class="like"><a href="../project/shopping_like.html" class="go_login">좋아요</a></li>
     </ul>
-    </div>
   </header>
   <nav class="category_bar">
     <div>
@@ -45,9 +46,9 @@
         </li>
         <li class="cate_Kids"><a href="">KIDS</a>
           <ul>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
+            <li><a href="">인형의집</a></li>
+            <li><a href="">스포츠완구</a></li>
+            <li><a href="">미술놀이</a></li>
           </ul>
         </li>
         <li class="cate_Toy"><a href="">고객지원</a>
@@ -60,16 +61,15 @@
     </div>
   </nav>
   <main>
-
     <div class="fixed-banner">
       <div>
-        <a href="#"><img src="../icon/top_2.png" alt="TOP" class="right_TOP"></a>
+        <a href="#"><img src="../icon/top_.png" alt="TOP" class="right_TOP"></a>
       </div>
       <div>
         <a href="../jungsunzoo/html/faq.html"><img src="../icon/qna.png" alt="FAQ" class="right_FAQ"></a>
       </div>
       <div>
-        <a href="#" target="_blank"><img src="../icon/kakao_1.png" alt="kakao" class="right_kakao"></a>
+        <a href="#" target="_blank"><img src="../icon/kakao.png" alt="kakao" class="right_kakao"></a>
       </div>
     </div>
     <div class="big_box">
@@ -77,74 +77,98 @@
     </div>
 
       <!-- ======================================= 주석처리 ================================ -->
-      <!-- <div class="small_box">
+      <!---    <div class="small_box">
         <div role="button" class="small1">사진 삽입 하기</div>
         <div role="button" class="small2">사진 삽입 하기</div>
         <div role="button" class="small3">사진 삽입 하기</div>
         <div role="button" class="small4">사진 삽입 하기</div>
       </div>
-      <hr class="slide_end"> -->
   
-      <!-- <article>
+      <article>
         <div>
           <h1 id="Best">
-            <span>베스트 상품</span>
+            <span>이런건 어때요</span>
           </h1>
         </div>
         <div class="best">
           <ul class="best_goods">
             <li class="best1">
-              <div>
-                <a href=""><img src="./image/best1.jpg" alt="헬로키티 블럭" class="kitty"></a>
+              <div class="tag">
+                <a href="">
+                  <img src="./image/best1.jpg" alt="헬로키티 블럭" class="kitty">
+                  <img src="./image/best1_1.PNG" alt="헬로키티 블럭 호버시" class="kitty_1"></a>
               </div>
               <div><a href="">
-                  <strong>산리오캐릭터즈 블록으로 만드는 러블리 헬로키티</strong>
+                  <strong class="goods_name">산리오캐릭터즈 블록으로 만드는 러블리 헬로키티</strong>
                 </a></div>
               <div>
-                <span>9,600</span>원
+                <span class="cost">9,600원</span>
               </div>
             </li>
             <li class="best2">
-              <div>
-                <a href=""><img src="./image/best2.PNG" alt="모코코 무드등" class="light"></a>
+              <div class="tag">
+                <a href="">
+                  <img src="./image/best2.PNG" alt="모코코 무드등" class="light">
+                  <img src="./image/best2-1.jpg" alt="모코코 무드등 호버시" class="light_1">
+                </a>
               </div>
+              <div><a href=""><strong class="goods_name">굿나잇 모코코 무드등</strong></a></div>
+              <div><span class="cost">45,000원</span></div>
             </li>
             <li class="best3">
-              <div>
-                <a href=""><img src="./image/best3.PNG" alt="모코코 마그넷" class="magnet"></a>
+              <div class="tag">
+                <a href="">
+                  <img src="./image/best3.PNG" alt="모코코 마그넷" class="magnet">
+                  <img src="./image/best3-1.jpg" alt="모코코 마그넷 호버시" class="magnet_1">
+                </a>
+              </div>
+              <div><a href=""><strong class="goods_name">모코코 마그넷 세트</strong></a></div>
+              <div><span class="cost">15,000원</span>
               </div>
             </li>
           </ul>
         </div>
-      </article> -->
+      </article>
   
-      <!-- <section>
+      <section>
         <div>
           <h1 id="New">
-            <span>신상품</span>
+            <span>새로 들어 왔어요</span>
           </h1>
         </div>
         <div class="best">
           <ul class="best_goods">
             <li class="best1">
               <div>
-                <a href=""><img src="./image/best1.jpg" alt="헬로키티 블럭" class="kitty"></a>
+                <a href="../project/shopping_details.html"><img src="./image/bear_1.jpg" alt="극세사 케어베어 곰인형"
+                    class="bear_1">
+                  <img src="./image/bear_1_1.jpg" alt="극세사 케어베어 곰인형 호버시" class="bear_1_1"></a>
               </div>
-              <div><a href="">
-                  <strong>산리오캐릭터즈 블록으로 만드는 러블리 헬로키티</strong>
+              <div><a href="../project/shopping_details.html">
+                  <strong class="goods_name">극세사 케어베어 곰인형</strong>
                 </a></div>
               <div>
-                <span>9,600</span>원
+                <span class="cost">15,000원</span>
               </div>
             </li>
             <li class="best2">
               <div>
-                <a href=""><img src="./image/best2.PNG" alt="모코코 무드등" class="light"></a>
+                <a href=""><img src="../project/img/relatedimg1.jpg" alt="보라색 곰인형" class="bear_2">
+                  <img src="../project/img/relatedimg2.jpg" alt="보라색 곰인형 호버시" class="bear_2_1"></a>
               </div>
+              <div><a href="">
+                  <strong class="goods_name">보라색 곰인형</strong>
+              </div>
+              </a>
+              <div><span class="cost">9,000원</span></div>
             </li>
             <li class="best3">
               <div>
-                <a href=""><img src="./image/best3.PNG" alt="모코코 마그넷" class="magnet"></a>
+                <a href=""><img src="../project/img/smallbear.jpg" alt="선글리스 곰인형" class="bear_3"><img
+                    src="../project/img/smallbear2.jpg" alt="선글리스 곰인형 호버시" class="bear_3_1"></a>
+              </div>
+              <div><a href=""><strong class="goods_name">선글라스 곰인형</strong></a></div>
+              <div><span class="cost">9,5000원</span>
               </div>
             </li>
           </ul>
@@ -272,7 +296,7 @@
       <li><a href="">이용안내</a></li>
       <li><a href="">개인정보처리방침</a></li>
       <li><a href="">이용약관</a></li>
-      <li><a href="">고객센터</a></li>
+      <li><a href="../jungsunzoo/html/notice.html">고객센터</a></li>
     </ul>
   </div>
 
@@ -290,6 +314,7 @@
     </div>
   </div>
 </footer>
+
 
 </body>
 </html>
