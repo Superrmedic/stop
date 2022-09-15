@@ -323,6 +323,11 @@ main>.small_box>.small4 {
 }
 
 /* -----------------article부분-------------------- */
+.bestpage {
+  padding: 20px;
+  margin-top: 30px;
+}
+
 article>.best {
   position: relative;
 }
@@ -335,7 +340,7 @@ article h1>span {
   display: flex;
   justify-content: center;
   margin: 50px;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 article .best_goods {
@@ -388,6 +393,11 @@ article .best_goods div>a:hover>.magnet_1 {
 }
 
 /* -----------------section부분-------------------- */
+.newpage {
+  padding: 20px;
+  margin-top: 30px;
+}
+
 section>.best {
   position: relative;
 }
@@ -404,7 +414,7 @@ section h1>span {
   display: flex;
   justify-content: center;
   margin: 50px;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 section .best_goods {
