@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -148,6 +149,12 @@ header>ul .login_info li a {
   margin-top: 10px;
 }
 
+.mypage:hover {
+  background: url(./image/user\ icon\ hover.png) center/80% 80% no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+}
 
 .cart {
   background: url(../Main_page/image/cart.png) center/80% 80% no-repeat;
@@ -157,8 +164,24 @@ header>ul .login_info li a {
   height: 55px;
 }
 
+.cart:hover {
+  background: url(./image/cart\ hover.png) center/80% 80% no-repeat;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 55px;
+  height: 55px;
+}
+
 .like {
   background: url(../Main_page/image/heart.png) center/80% 80% no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.like:hover {
+  background: url(./image/heart_hover.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 12px;
@@ -187,7 +210,7 @@ header>ul .login_info li a {
   width: 20%;
   text-align: center;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 19px;
 
 }
 
@@ -334,7 +357,7 @@ main>.small_box>.small4 {
 /* -----------------article부분-------------------- */
 .bestpage {
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 article>.best {
@@ -365,7 +388,7 @@ article .best_goods>li {
 
 article .best_goods div>a>img {
   width: 85%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 article .best_goods div>a>.kitty_1 {
@@ -404,7 +427,7 @@ article .best_goods div>a:hover>.magnet_1 {
 /* -----------------section부분-------------------- */
 .newpage {
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 section>.best {
@@ -439,7 +462,7 @@ section .best_goods>li {
 
 section .best_goods div>a>img {
   width: 80%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 section .best_goods div>a>.bear_1_1 {
