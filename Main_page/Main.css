@@ -112,7 +112,7 @@ header>ul .login_info li a {
 
 .mypage {
   position: relative;
-  background: url(./image/user\ icon-1.png) center/80% 80% no-repeat;
+  background: url(../Main_page/image/user\ icon-1.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 10px;
@@ -120,7 +120,7 @@ header>ul .login_info li a {
 
 
 .cart {
-  background: url(./image/cart.png) center/80% 80% no-repeat;
+  background: url(../Main_page/image/cart.png) center/80% 80% no-repeat;
   margin-top: 5px;
   margin-left: 10px;
   width: 55px;
@@ -128,7 +128,7 @@ header>ul .login_info li a {
 }
 
 .like {
-  background: url(./image/heart.png) center/80% 80% no-repeat;
+  background: url(../Main_page/image/heart.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 12px;
