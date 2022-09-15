@@ -126,29 +126,51 @@ header>ul .login_info li a {
 }
 
 .mypage {
-  position: relative;
-  background: url(../image/usericon-1.png) center/80% 80% no-repeat;
-  width: 45px;
-  height: 45px;
-  margin-top: 10px;
-}
-
-
-.cart {
-  background: url(../image/cart.png) center/80% 80% no-repeat;
-  margin-top: 5px;
-  margin-left: 10px;
-  width: 55px;
-  height: 55px;
-}
-
-.like {
-  background: url(../image/heart.png) center/80% 80% no-repeat;
-  width: 45px;
-  height: 45px;
-  margin-top: 12px;
-  margin-left: 10px;
-}
+    position: relative;
+    background: url(../image/user\ icon-1.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+  }
+  
+  .mypage:hover {
+    background: url(../image/user\ icon-1_.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+  }
+  
+  .cart {
+    background: url(../image/cart.png) center/80% 80% no-repeat;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .cart:hover {
+    background: url(../image/cart_.png) center/80% 80% no-repeat;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .like {
+    background: url(../image/heart.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+  
+  .like:hover {
+    background: url(../image/heart_.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 12px;
+    margin-left: 10px;
+  }
 
 /* ----------- .category 부분 --------------- */
 
