@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -305,7 +306,7 @@ section {
 }
 
 .board_table p {
-    background-color: darkorange;
+    background-color: #5CE5CF;
     color: white;
     width: 50px;
     height: 25px;
@@ -422,6 +423,10 @@ aside strong {
 /* =================================== */
 /* ------------ 기본 세팅 --------------- */
 
+body {
+    font-family: S-CoreDream-3Light;
+}
+
 header,
 nav,
 main,
@@ -532,7 +537,12 @@ header ul>.mypage:hover>.login_info {
 
 header ul>.mypage>.login_info li:hover {
     font-weight: bold;
-    background-color: rgb(197, 197, 197);
+    background-color: #5ce5cf;
+    transition: 1s;
+}
+
+header>ul .login_info li:hover a {
+    color: white;
 }
 
 header>ul .login_info li a {
@@ -550,6 +560,12 @@ header>ul .login_info li a {
     margin-top: 10px;
 }
 
+.mypage:hover {
+    background: url(../img/user\ icon\ hover.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+}
 
 .cart {
     background: url(../img/cart.png) center/80% 80% no-repeat;
@@ -559,8 +575,24 @@ header>ul .login_info li a {
     height: 55px;
 }
 
+.cart:hover {
+    background: url(../img/cart\ hover.png) center/80% 80% no-repeat;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 55px;
+    height: 55px;
+}
+
 .like {
     background: url(../img/heart.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.like:hover {
+    background: url(../img/heart_hover.png) center/80% 80% no-repeat;
     width: 45px;
     height: 45px;
     margin-top: 12px;
@@ -589,13 +621,14 @@ header>ul .login_info li a {
     width: 20%;
     text-align: center;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 19px;
 
 }
 
 .category_bar ul>li li:hover {
     font-weight: bold;
-    background-color: rgb(197, 197, 197);
+    background-color: #5ce5cf;
+    transition: 1s;
 }
 
 .category_bar ul>li li {
@@ -635,7 +668,6 @@ header>ul .login_info li a {
     top: calc(100% + 5px);
     left: 0;
     width: 100%;
-    padding: 10px 0;
     text-align: center;
     box-shadow: 3px 3px 3px rgb(197, 197, 197);
 }
@@ -651,6 +683,10 @@ header>ul .login_info li a {
 
 .category_bar ul.category ul>li>a {
     color: black;
+}
+
+.category_bar ul.category ul>li:hover>a {
+    color: white;
 }
 
 /* ----------- .main 부분 --------------- */
