@@ -99,6 +99,7 @@ header ul>.mypage:hover>.login_info {
 }
 
 header ul>.mypage>.login_info li:hover {
+  font-weight: bold;
   background-color: rgb(197, 197, 197);
 }
 
@@ -161,6 +162,7 @@ header>ul .login_info li a {
 }
 
 .category_bar ul>li li:hover {
+  font-weight: bold;
   background-color: rgb(197, 197, 197);
 }
 
