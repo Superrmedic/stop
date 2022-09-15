@@ -14,12 +14,14 @@
     <header>
         <div class="logo">
             <h1>
-                <a href="../Main_page/Main.html">PSYC</a>
+                <a href="../Main_page/Main.html" class="banner"><img src="./img/main_banner.png" alt="로고"></a>
             </h1>
         </div>
+
         <div class="search">
-            <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~~">
+            <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~">
         </div>
+
         <ul class="login">
             <li class="mypage">
                 <ul class="login_info">
@@ -27,11 +29,9 @@
                     <li><a href="../sign_on/html/terms_agree.html">회원가입</a></li>
                 </ul>
             </li>
-            </a>
             <li class="cart"><a href="../project/shopping_cart.html" class="go_login">장바구니</a></li>
             <li class="like"><a href="../project/shopping_like.html" class="go_login">좋아요</a></li>
         </ul>
-        </div>
     </header>
     <nav class="category_bar">
         <div>
@@ -64,6 +64,17 @@
     </nav>
 
     <main>
+        <div class="fixed-banner">
+            <div>
+                <a href="#"><img src="./img/top_.png" alt="TOP" class="right_TOP"></a>
+            </div>
+            <div>
+                <a href="../jungsunzoo/html/faq.html"><img src="./img/qna.png" alt="FAQ" class="right_FAQ"></a>
+            </div>
+            <div>
+                <a href="#" target="_blank"><img src="./img/kakao.png" alt="kakao" class="right_kakao"></a>
+            </div>
+        </div>
         <div class="shopproduct">
             <div class="shopimg_a">
                 <img src="./img/bear_1.jpg" class="mainbear" alt="케어베어 곰인형">
@@ -104,12 +115,14 @@
                 </div>
 
                 <div class="shopbuttons">
-                    <button class="shoppay_bt" type="button"
-                        onclick="location.href='http://127.0.0.1:5501/project/shopping_cart.html';">바로 구매</button>
-                    <button class="shopcart_bt" type="button"
-                        onclick="location.href='http://127.0.0.1:5501/project/shopping_cart.html';">장바구니</button>
-                    <button class="shoplike_bt" type="button"
-                        onclick="location.href='http://127.0.0.1:5501/project/shopping_like.html';">좋아요 &#9829</button>
+                    <button class="shoppay_bt" type="button" onclick="location.href='shopping_cart.html';"
+                        style='cursor:pointer;'>바로
+                        구매</button>
+                    <button class="shopcart_bt" type="button" onclick="location.href='shopping_cart.html';"
+                        style='cursor:pointer;'>장바구니</button>
+                    <button class="shoplike_bt" type="button" onclick="location.href='shopping_like.html';"
+                        style='cursor:pointer;'>좋아요
+                        &#9829</button>
                 </div>
             </div>
         </div>
@@ -120,8 +133,8 @@
             <ul class="productinfo_detail">
                 <li><a href="#shopexplanid">상품 정보</a></li>
                 <li><a href="#delivery_infoid">배송/교환</a></li>
-                <li><a href="#">Review</a></li>
-                <li><a href="#">Q & A</a></li>
+                <li><a href="#board_listid">Review</a></li>
+                <li><a href="../jungsunzoo/html/question.html">Q & A</a></li>
             </ul>
         </div>
     </nav>
@@ -188,6 +201,46 @@
 
 
     <aside>
+        <div class="board_list" id="board_listid">
+            <div class="board_info">
+                <h2>Review</h2>
+                <span>구매하신 상품에 대한 리뷰를 남겨주세요.</span>
+            </div>
+
+            <table class="board_table">
+                <thead>
+                    <tr>
+                        <th scope="row" rowspan="3">분류</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>공지</p>
+                        </td>
+                        <td><b>사진 리뷰 작성시 적립금 추가 혜택을 드립니다!</b></td>
+                        <td>관리자</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>공지</p>
+                        </td>
+                        <td><b>배송완료 후 리뷰 작성이 가능합니다.</b></td>
+                        <td>관리자</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btns">
+                <button type="button" class="btn_left">left</button>
+                <button type="button" class="btn_right">right</button>
+            </div>
+        </div>
+
+
         <h3>related product</h3>
         <div class="related_detail">
             <div class="related1">
