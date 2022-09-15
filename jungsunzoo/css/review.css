@@ -312,6 +312,7 @@ main .customer_list li a {
     display: inline-block;
     text-indent: -9999em;
     transition: .5s;
+    border-radius: 100px;
 }
 
 main .customer_list li:nth-child(2) a {
