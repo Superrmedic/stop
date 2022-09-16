@@ -5,6 +5,17 @@
     scroll-behavior: smooth;
   }
   
+  @font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    font-family: S-CoreDream-3Light;
+  }
+
   header,
   nav,
   main,
@@ -14,18 +25,6 @@
     min-width: 1500px;
   }
 
-  
-@font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: S-CoreDream-3Light;
-}
-  
   ul {
     list-style: none;
   }
@@ -44,7 +43,20 @@ header {
     flex-direction: row;
     padding: 10px;
     margin-top: 20px;
-    /* background-color: #5ce5cf; */
+  }
+  
+.top_banner {
+    display: flex;
+    background-color: #5ce5cf;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .top_banner a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
   }
   
   header div.logo {
@@ -93,7 +105,6 @@ header {
     width: 50px;
     height: 55px;
     text-indent: -9999em;
-  
   }
   
   header ul .login_info {
@@ -185,7 +196,6 @@ header {
   }
   
   .category_bar>div>ul.category {
-    /* background-color: #ffe4c4; */
     display: flex;
     justify-content: center;
     border-radius: 5px;
@@ -271,50 +281,69 @@ display: flex;
 position: relative;
 }
 
-main>.fixed-banner a>.right_TOP,
-main>.fixed-banner a>.right_FAQ,
-main>.fixed-banner a>.right_kakao {
-position: fixed;
-width: 40px;
-height: 40px;
-right: 5px;
-bottom: 100px;
-Z-index: 1;
-background-color: #f0efe9;
-}
-
 main>.fixed-banner a>.right_TOP {
-bottom: 140px;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 5px;
+    bottom: 100px;
+    Z-index: 1;
+    background-color: lightgray;
+    border-radius: 50px;
 }
 
-main>.fixed-banner a>.right_FAQ {
-bottom: 60px;
-}
+/* main>.fixed-banner a>.right_TOP {
+    bottom: 140px;
+  }
   
-main>.big_box {
-    margin: 0 auto 50px;
-    line-height: 500px;
-    background: url(../image/review_banner.png) 0/100% 100%;
-    text-indent: -9999px;
-}
-
-
+  main>.fixed-banner a>.right_FAQ {
+    bottom: 60px;
+  }
+   */
+  main .container {
+    display: grid;
+    margin: 6em;
+    font-size: 1.2em;
+  }
   
+  main .container div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  main .container1 {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main .container1>.box1 {
+    letter-spacing : 5px;
+    font-variant: small-caps;
+  }
+  
+  main .container1>.box3 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    animation: myfirst 2s 1;
+    animation-direction: alternate;
+    right: -10px;
+  }
+  
+  @keyframes myfirst {
+    0%   {right: 100px; top: 0px;}
+    100%  {right: -10px; top: 0px;}
+  }
+  
+  main .container2>.box2 {
+    color: darkgrey;
+    font-size: .9em;
+  }
+
 /*  <----- customer service 게시판 전체 영역 -----> */
 main .board_list div {
     display: flex;
-    color:rgb(51, 51, 51);
     align-items: center;
-}
-
-main .board_list div h2 {
-    padding-bottom: 1em;
-    font-weight: 500;
-}
-
-main .board_list div span {
-    color:hsl(0, 0%, 51%);
-    padding: 0 0 20px 10px;
 }
 
 main .board {
@@ -347,7 +376,6 @@ main .customer_list li a {
     display: inline-block;
     text-indent: -9999em;
     transition: .5s;
-    border-radius: 100px;
 }
 
 main .customer_list li:nth-child(2) a {
@@ -404,7 +432,7 @@ main .board_table td {
 }
 
 main .board_table p {
-    background-color: darkorange;
+    background-color: hsla(91, 36%, 70%, 0.768);
     color: white;
     width: 50px;
     height: 25px;
@@ -413,20 +441,6 @@ main .board_table p {
     border-radius: 20px;
     display: inline-block;
 }
-/* -----글 내용 : 자바스크립트로 구현 해야 하는걸 css로 구현해봄 ---------- */
-main .board_table tbody ul>li {
-    height: 0;
-    transition: .5s;
-    transform: scaleY(0);
-}
-
-main .board_table tbody ul:active li {
-    visibility: visible;
-    font-size: .8em;
-    transition: .5s;
-    transform: scaleY(1);
-}
-
 /* --------------------  버튼  -------------------------  */
 .btns {
     display: flex;

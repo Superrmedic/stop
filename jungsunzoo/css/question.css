@@ -1,10 +1,35 @@
+/* 22.0917 수정내용
+
+**** 게시판별 세부 수정
+**** 메인 배너 아이콘 수정(임시)
+
+
+- 스크롤 top_ 이미지 변경
+
+- html파일
+fixed-banner에 FAQ, KAKAO 이미지 지움
+
+- css 파일
+main>.fixed-banner a>.right_TOP {
+  bottom: 140px;
+}
+main>.fixed-banner a>.right_FAQ {
+  bottom: 60px;
+  지움
+}
+---------------------------------------------
+main>.fixed-banner a>.right_TOP 한줄로 변경 (나머지 지움)
+
+background-color: lightgray; - 색깔변경
+border-radius: 50px; - 추가
+ */
+
 /* ------------ 기본 세팅 --------------- */
 * {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
   }
-  
 
   @font-face {
     font-family: 'S-CoreDream-3Light';
@@ -44,7 +69,20 @@ header {
   flex-direction: row;
   padding: 10px;
   margin-top: 20px;
-  /* background-color: #5ce5cf; */
+}
+
+.top_banner {
+  display: flex;
+  background-color: #5ce5cf;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.top_banner a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
 }
 
 header div.logo {
@@ -93,7 +131,6 @@ header ul.login .go_login {
   width: 50px;
   height: 55px;
   text-indent: -9999em;
-
 }
 
 header ul .login_info {
@@ -185,7 +222,6 @@ header>ul .login_info li a {
   }
   
   .category_bar>div>ul.category {
-    /* background-color: #ffe4c4; */
     display: flex;
     justify-content: center;
     border-radius: 5px;
@@ -197,7 +233,6 @@ header>ul .login_info li a {
     text-align: center;
     font-weight: bold;
     font-size: 21px;
-  
   }
   
   .category_bar ul>li li:hover {
@@ -271,56 +306,75 @@ display: flex;
 position: relative;
 }
 
-main>.fixed-banner a>.right_TOP,
-main>.fixed-banner a>.right_FAQ,
-main>.fixed-banner a>.right_kakao {
-position: fixed;
-width: 40px;
-height: 40px;
-right: 5px;
-bottom: 100px;
-Z-index: 1;
-background-color: #f0efe9;
+main>.fixed-banner a>.right_TOP {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 5px;
+    bottom: 100px;
+    Z-index: 1;
+    background-color: lightgray;
+    border-radius: 50px;
 }
 
-main>.fixed-banner a>.right_TOP {
-bottom: 140px;
+/* main>.fixed-banner a>.right_TOP {
+  bottom: 140px;
 }
 
 main>.fixed-banner a>.right_FAQ {
-bottom: 60px;
+  bottom: 60px;
+} */
+
+main .container {
+  display: grid;
+  margin: 6em;
+  font-size: 1.2em;
 }
 
-main>.big_box {
-    margin: 0 auto 50px;
-    line-height: 80%;
-    background: url(../image/question_banner.png) 0/100% 100%;
-    text-indent: -9999px;
+main .container div {
+  display: flex;
+  justify-content: center;
 }
-  
-  
+
+main .container1 {
+  align-items: center;
+  justify-content: center;
+}
+
+main .container1>.box1 {
+  letter-spacing : 5px;
+  font-variant: small-caps;
+}
+
+main .container1>.box3 {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  animation: myfirst 2s 1;
+  animation-direction: alternate;
+  right: -10px;
+}
+
+@keyframes myfirst {
+  0%   {right: 190px; top: 0px;}
+  100%  {right: -10px; top: 0px;}
+}
+
+main .container2>.box2 {
+  color: darkgrey;
+  font-size: .9em;
+}
 /*  <----- customer service 게시판 전체 영역 -----> */
 main .board_list div {
-    display: flex;
-    color:rgb(51, 51, 51);
-    align-items: center;
-}
-
-main .board_list div h2 {
-    padding-bottom: 1em;
-    font-weight: 500;
-}
-
-main .board_list div span {
-    color:hsl(0, 0%, 51%);
-    padding: 0 0 20px 10px;
+  display: flex;
+  align-items: center;
 }
 
 main .board {
-    display: flex;
-    justify-content: space-evenly;
-    color: rgb(51, 51, 51);
-    margin-bottom: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(51, 51, 51);
+  margin-bottom: 10%;
 }
 
 /* <----- 왼쪽 메뉴 -----> */
@@ -393,7 +447,6 @@ main .board_table {
 main .board_table th {
     border-bottom: 1px solid #bbbbbb;
     line-height: 5vh;
-
 }
 
 main .board_table td {
@@ -402,7 +455,7 @@ main .board_table td {
 }
 
 main .board_table p {
-    background-color: #db1010;
+    background-color: hwb(0 51% 1% / 0.818);
     color: white;
     width: 50px;
     height: 25px;

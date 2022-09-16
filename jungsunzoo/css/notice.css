@@ -5,6 +5,17 @@
     scroll-behavior: smooth;
   }
   
+  @font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: S-CoreDream-3Light;
+  }
+
   header,
   nav,
   main,
@@ -13,17 +24,6 @@
     margin: auto;
     min-width: 1500px;
   }
-  
-@font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: S-CoreDream-3Light;
-}
   
   ul {
     list-style: none;
@@ -43,8 +43,22 @@ header {
     flex-direction: row;
     padding: 10px;
     margin-top: 20px;
-    /* background-color: #5ce5cf; */
   }
+
+  
+.top_banner {
+  display: flex;
+  background-color: #5ce5cf;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.top_banner a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
   
   header div.logo {
     margin-right: 20px;
@@ -92,7 +106,6 @@ header {
     width: 50px;
     height: 55px;
     text-indent: -9999em;
-  
   }
   
   header ul .login_info {
@@ -184,7 +197,6 @@ header {
   }
   
   .category_bar>div>ul.category {
-    /* background-color: #ffe4c4; */
     display: flex;
     justify-content: center;
     border-radius: 5px;
@@ -196,7 +208,6 @@ header {
     text-align: center;
     font-weight: bold;
     font-size: 21px;
-  
   }
   
   .category_bar ul>li li:hover {
@@ -279,16 +290,17 @@ main>.fixed-banner a>.right_kakao {
     right: 5px;
     bottom: 100px;
     Z-index: 1;
-    background-color: #f0efe9;
+    background-color: lightgray;
+    border-radius: 50px;
 }
 
-main>.fixed-banner a>.right_TOP {
+/* main>.fixed-banner a>.right_TOP {
     bottom: 140px;
 }
 
 main>.fixed-banner a>.right_FAQ {
     bottom: 60px;
-}
+} */
 
 main .container {
     display: grid;
@@ -299,15 +311,33 @@ main .container {
 main .container div {
     display: flex;
     justify-content: center;
-    margin: 5px;
 }
 
-main .container>.box1 {
+main .container1 {
+    align-items: center;
+    justify-content: center;
+}
+
+main .container1>.box1 {
     letter-spacing : 5px;
     font-variant: small-caps;
 }
 
-main .container>.box2 {
+main .container1>.box3 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    animation: myfirst 2s 1;
+    animation-direction: alternate;
+    right: -10px;
+}
+
+@keyframes myfirst {
+    0%   {right: 150px; top: 0px;}
+    100%  {right: -10px; top: 0px;}
+  }
+
+main .container2>.box2 {
     color: darkgrey;
     font-size: .9em;
 }
@@ -395,7 +425,6 @@ main .board_table {
 main .board_table th {
     border-bottom: 1px solid #bbbbbb;
     line-height: 5vh;
-
 }
 
 main .board_table td {
