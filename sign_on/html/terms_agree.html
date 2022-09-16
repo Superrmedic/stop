@@ -8,59 +8,78 @@
     <link rel="stylesheet" href="../css/sign_on.css">
 </head>
 <body>
+  <div class="top_banner">
+    <a href="../html/welcome.html">지금 가입하고 적립금 500원 받아가세요!!
+    </a>
+  </div>
   <header>
     <div class="logo">
       <h1>
-        <a href="#">PSYC</a>
+        <a href="../../Main_page/Main.html" class="banner"><img src="../../Main_page/image/main_banner.png" alt="로고"></a>
       </h1>
     </div>
+
     <div class="search">
-      <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~~">
+      <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~">
     </div>
+
     <ul class="login">
-      <li class="mypage"><a href="">로그인</a></li>
-      <li class="cart"><a href="">장바구니</a></li>
-      <li class="like"><a href="">좋아요</a></li>
+      <li class="mypage">
+        <ul class="login_info">
+          <li><a href="">MY PAGE</a></li>
+          <li><a href="../html/welcome.html">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </li>
+      <li class="cart"><a href="../../project/shopping_cart.html" class="go_login">장바구니</a></li>
+      <li class="like"><a href="../../project/shopping_like.html" class="go_login">좋아요</a></li>
     </ul>
-    </div>
   </header>
   <nav class="category_bar">
     <div>
       <ul class="category">
-        <li class="cate_Best"><a href="#Best">BEST</a>
+        <li class="cate_Best"><a href="../../Main_page/Main.html">BEST</a>
         </li>
-        <li class="cate_New"><a href="#New">NEW</a></li>
+        <li class="cate_New"><a href="../../Main_page/Main.html">NEW</a></li>
         <li class="cate_Acc"><a href="">ACC</a>
           <ul>
             <li><a href="">그립톡</a></li>
             <li><a href="">핸드폰 케이스</a></li>
             <li><a href="">키링</a></li>
-            <li><a href=""></a></li>
           </ul>
         </li>
         <li class="cate_Kids"><a href="">KIDS</a>
           <ul>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href=""></a></li>
+            <li><a href="">봉제 인형</a></li>
+            <li><a href="">스포츠완구</a></li>
+            <li><a href="">미술놀이</a></li>
           </ul>
         </li>
-        <li class="cate_Toy"><a href="">TOY</a>
+        <li class="cate_Toy"><a href="">고객지원</a>
           <ul>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href=""></a></li>
+            <li><a href="../../jungsunzoo/html/faq.html">FAQ</a></li>
+            <li><a href="../../jungsunzoo/html/notice.html">공지사항</a></li>
           </ul>
         </li>
       </ul>
     </div>
   </nav>
-  <hr>
+
     <main>
+      <div class="fixed-banner">
+        <div>
+          <a href="#"><img src="../../Main_page/image/top_.png" alt="TOP" class="right_TOP"></a>
+        </div>
+        <div>
+          <a href="../../jungsunzoo/html/faq.html"><img src="../../Main_page/image/qna.png" alt="FAQ" class="right_FAQ"></a>
+        </div>
+        <div>
+          <a href="#" target="_blank"><img src="../../Main_page/image/kakao.png" alt="kakao" class="right_kakao"></a>
+        </div>
+      </div>
+
         <div class="inner_box">
-            <p class="inner_title" style="margin-bottom: 10px;">PSYC에 오신것을 환영합니다!</p>
+            <p class="inner_title" style="margin-bottom: 10px;">갖고놀래? 에 오신것을 환영합니다!</p>
             <ul class="flex-terms"> <!--밑줄아니에요 밑줄아니에요 밑줄아니에요 밑줄아니에요 밑줄아니에요-->
                 <li> 
                     <ul class="terms">
@@ -134,23 +153,21 @@ Pariatur qui incididunt ullamco sit adipisicing mollit elit officia voluptate es
         </div>
         </div>
     </main>
+    
     <footer>
+      <hr class="hr_footer">
       <div class="under">
         <ul class="under_menu1">
           <li><a href="">PSYC소개</a></li>
           <li><a href="">이용안내</a></li>
           <li><a href="">개인정보처리방침</a></li>
           <li><a href="">이용약관</a></li>
-          <li><a href="">고객선터</a></li>
-        </ul>
-        <ul class="under_menu2">
-          <li><a href="/">Home</a></li>
-          <li>|</li>
-          <li><a href="#">Top</a></li>
+          <li><a href="../jungsunzoo/html/notice.html">고객센터</a></li>
         </ul>
       </div>
   
       <div>
+        <hr class="hr_footer">
         <div class="info">
           <strong>PSYC(주)</strong>
           경기도 성남시 분당구 돌마로 46 KR 5층 <strong>대표자</strong> 하영권

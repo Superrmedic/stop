@@ -22,7 +22,7 @@ header{
 }
 
 .header{
-    background-image: url(../img/gaggonolle.png);
+    background-image: url(../../Main_page/image/main_banner.png);
     background-size: 100% 100%;
     grid-column: 4 / 5;
     grid-row: 1 / 6;
@@ -31,11 +31,11 @@ header{
 
 /* --------------------------------------------------- */
 main{
-    height: 50vh;
+    height: 60vh;
     margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(15,0.5fr);
-    grid-template-rows: repeat(11, 0.5fr);
+    grid-template-rows: repeat(14, 0.5fr);
 }
 
 main div{
@@ -56,6 +56,8 @@ main div{
 }
 
 .cont{
+    color: #1f9984;
+    font-size: 1.2rem;
     grid-column: 5 / 12;
     grid-row: 4 / 6;
 }
@@ -67,9 +69,12 @@ main div{
 .box1,
 .box2,
 .box3{
-    grid-row: 6 / 9;
+    grid-row: 6 / 10;
     background-image: url(../img/banner.png);
     background-size: 100% 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 
 .box1{
@@ -85,8 +90,9 @@ main div{
 }
 
 .go_to_login{
-    grid-column: 7 / 10;
-    grid-row: 10 / 11;
+    font-size: .8rem;
+    grid-column: 8 / 9;
+    grid-row: 13 / 14;
     background-color: #5ce5cf;
 }
 
