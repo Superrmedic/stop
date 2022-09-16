@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -289,28 +290,32 @@ main>.fixed-banner a>.right_FAQ {
   bottom: 60px;
 }
 
-main>.big_box {
-    margin: 0 auto 50px;
-    line-height: 500px;
-    background: url(../image/faq_banner.png) 0/100% 100%;
-    text-indent: -9999px;
+main .container {
+    display: grid;
+    margin: 6em;
+    font-size: 1.2em;
+}
+
+main .container div {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+main .container>.box1 {
+    letter-spacing : 5px;
+    font-variant: small-caps;
+}
+
+main .container>.box2 {
+    color: darkgrey;
+    font-size: .9em;
 }
 
 /*  <----- customer service 게시판 전체 영역 -----> */
 main .board_list div {
     display: flex;
-    color:rgb(51, 51, 51);
     align-items: center;
-}
-
-main .board_list div h2 {
-    padding-bottom: 1em;
-    font-weight: 500;
-}
-
-main .board_list div span {
-    color:hsl(0, 0%, 51%);
-    padding: 0 0 20px 10px;
 }
 
 main .board {
@@ -319,7 +324,6 @@ main .board {
     color: rgb(51, 51, 51);
     margin-bottom: 10%;
 }
-
 /* <----- 왼쪽 메뉴 -----> */
 
 main .left_list {
@@ -411,15 +415,15 @@ main .board_table .icon_3 {
 }
 
 main .board_table .icon_1 {
-    background-color: #fec7e6;
+    background-color: hwb(340 63% 17% / 0.815);
 }
 
 main .board_table .icon_2 {
-    background-color: hsl(217, 100%, 67%);
+    background-color: hwb(209 51% 29%);
 }   
 
 main .board_table .icon_3 {
-    background-color: aquamarine;
+    background-color: hwb(9 65% 4% / 0.76);
 }
 /* --------------------  버튼  -------------------------  */
 .btns {
