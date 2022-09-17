@@ -304,14 +304,6 @@ main>.fixed-banner a>.right_FAQ {
   bottom: 60px;
 }
 
-main>.big_box {
-  margin: 0 auto 50px;
-  line-height: 500px;
-  text-align: center;
-  background: url(./image/big_box.PNG) center/100% 100%;
-  text-indent: -9999px;
-}
-
 main>div.small_box {
   display: flex;
   justify-content: space-around;
@@ -338,6 +330,44 @@ main>.small_box>.small3 {
 main>.small_box>.small4 {
   background: url(./image/small_box.png) center/100% 100%;
 } */
+
+/* =============================== 메인 배너 ======================================= */
+
+/* main>.big_box {
+  margin: 0 auto 50px;
+  line-height: 500px;
+  text-align: center;
+  background: url(./image/big_box.PNG) center/100% 100%;
+  text-indent: -9999px;
+} */
+
+main #Btn {
+    position: fixed;
+    left: -9999px;
+}
+
+main .clickImage {
+    display: none;
+}
+
+main .labelBtn {
+    justify-content: center;
+}
+
+
+main label,
+#Btn:checked ~ .clickImage,
+main .clickImage img {
+    display: flex;
+}
+
+main label img {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    margin-bottom: 6px;
+    z-index: 1;
+}
 
 .cost {
   margin-left: 10px;
