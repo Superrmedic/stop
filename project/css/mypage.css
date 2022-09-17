@@ -287,11 +287,6 @@ main h1 {
   margin-top: 80px;
 }
 
-main .fixed-banner {
-  display: flex;
-  position: relative;
-}
-
 main>.fixed-banner a>.right_TOP,
 main>.fixed-banner a>.right_FAQ,
 main>.fixed-banner a>.right_kakao {
@@ -310,6 +305,82 @@ main>.fixed-banner a>.right_TOP {
 
 main>.fixed-banner a>.right_FAQ {
   bottom: 60px;
+}
+
+main>.grid {
+  display: grid;
+  grid-template: 1fr / repeat(12, 1fr);
+}
+
+main>.grid>.profile {
+  grid-column: 3 / 4;
+  margin: 5px auto 0;
+}
+
+main>.grid>.icon {
+  grid-column: 4 / 7;
+  margin: auto;
+}
+
+main>.grid>.ranking {
+  grid-column: 10;
+  margin: 20px auto 0;
+}
+
+main>.banner>.movingbox {
+  margin-top: 100px;
+  margin-left: 170px;
+  display: flex;
+
+}
+
+main>.banner>.movingbox>li {
+  line-height: 20px;
+  padding: 10px;
+  width: 15%;
+  font-size: 23px;
+  text-align: center;
+  background-color: #5ce5cf;
+  opacity: .6;
+}
+
+main>.banner>.movingbox>li:hover {
+  opacity: 1;
+}
+
+.cartcheckbox1 {
+  margin-left: 170px;
+  margin-right: 170px;
+  border: 1px solid gray;
+}
+
+.cartcheckbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 15px;
+  line-height: 120px;
+  position: relative;
+}
+
+.cartimage1 {
+  width: 120px;
+  height: 120px;
+  margin: 0 30px;
+}
+
+.cartcheckbox span {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cartcheckbox strong {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  font-size: 18px;
 }
 
 /* -----------------footer부분-------------------- */
