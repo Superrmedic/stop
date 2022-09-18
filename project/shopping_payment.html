@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopping_payment</title>
+    <title>shopping_cart</title>
     <link rel="stylesheet" href="./css/shopping_payment.css">
+    <script src="https://kit.fontawesome.com/11d243a6e5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -81,7 +82,189 @@
                 <a href="#" target="_blank"><img src="./img/kakao.png" alt="kakao" class="right_kakao"></a>
             </div>
         </div>
+
+        <div class="shop_orderpg">
+            <h1>주문/결제</h1>
+            <div class="shop_orderlist">
+                <h2>주문 상품</h2>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./shopping_details.html">
+                            <image src="./img/bear_1.jpg" alt="극세사 쿼카 인형"></image>
+                        </a>
+                        <span>극세사 쿼카 인형</span>
+                        <span>1개</span>
+                        <span>15,000원</span>
+                    </li>
+                    <li>
+                        <a href="./shopping_details.html">
+                            <image src="./img/smallbear2.png" alt="극세사 쿼카 키링"></image>
+                        </a>
+                        <span>극세사 쿼카 키링</span>
+                        <span>1개</span>
+                        <span>9,000원</span>
+                    </li>
+                </ul>
+            </div>
+
+            <form action="#">
+                <div class="shop_oderinfo">
+                    <h2>주문자 정보</h2>
+                    <hr>
+                    <label>
+                        <span>이름</span>
+                        <input name="name" maxlength="10" value="하영권">
+                    </label>
+
+                    <label>
+                        <span>휴대폰</span>
+                        <select name="phone1">
+                            <option value disabled>선택</option>
+                            <option value="0">010</option>
+                            <option value="1">011</option>
+                            <option value="2">016</option>
+                            <option value="3">017</option>
+                            <option value="4">018</option>
+                            <option value="5">019</option>
+                        </select>
+                        <input type="tell" placeholder="입력해주세요" size="6" maxlength="9" value="8282-5353">
+                    </label>
+
+                    <label>
+                        <span>이메일</span>
+                        <input type="email" value="greencomputer" placeholder="이메일" maxlength="20" title="이메일 앞부분">
+                        <span name="email1">@</span>
+                        <select>
+                            <option value disabled>선택해 주세요</option>
+                            <option value="0">naver.com</option>
+                            <option value="1">hanmail.net</option>
+                            <option value="2">daum.net</option>
+                            <option value="3">gmail.com</option>
+                            <option value="4">kakao.com</option>
+                            <option value="5">직접 입력</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="shop_deliinfo">
+                    <h2>배송 정보</h2>
+                    <div>변경</div>
+                    <hr>
+
+                    <div>
+                        <span>배송지</span>
+                        <ul>
+                            <li>경기도 성남시 분당구 돌마로 46, 5층</li>
+                            <li>하영권, 010-8282-5353</li>
+                        </ul>
+
+                        <label>
+                            <div class="shop_defaultad">
+                                <input type="checkbox" name="defaultadress">
+                                <div>기본 배송지로 저장</div>
+                            </div>
+                            <select class="shop_deliveryplz">
+                                <option value="0">배송시 요청사항을 선택해주세요.</option>
+                                <option value="1">부재시 문앞에 놓아주세요</option>
+                                <option value="2">배송 전에 미리 연락주세요</option>
+                                <option value="3">부재시 경비실에 맡겨주세요</option>
+                                <option value="4">부재시 전화주시거나 문자 남겨주세요</option>
+                                <option value="5">직접 입력</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="shop_ordercoupon">
+                    <h2>쿠폰 / 적립금</h2>
+                    <hr>
+
+                    <div class="order_coupon">
+                        <span>쿠폰 적용</span>
+                        <button type="button" class="couponnumber">사용가능 쿠폰 0장 / 전체 0장</button>
+                    </div>
+                    <div class="order_point">
+                        <span>적립금 적용</span>
+                        <input type="text" placeholder="0" name="pointuse">
+                        <button type="button" style='cursor:pointer;'>모두 사용</button>
+                        <div>사용 가능 적립금 1,250원</div>
+                    </div>
+                </div>
+
+                <div class="shop_orderpay">
+                    <h2>결제 금액</h2>
+                    <div class="order_allpay">
+                        <div>총 주문 금액</div>
+                        <div>24,000원</div>
+                    </div>
+                    <div class="order_deliverypay">
+                        <div>배송비</div>
+                        <div>+ 2,500원</div>
+                    </div>
+                    <div class="order_couponpay">
+                        <div>쿠폰 사용</div>
+                        <div>0원</div>
+                    </div>
+                    <div class="order_pointpay">
+                        <div>적립금 사용</div>
+                        <div>0원</div>
+                    </div>
+                    <hr>
+
+                    <div class="order_totalpay">
+                        <div>최종 결제 금액</div>
+                        <div><strong>26,500원</strong></div>
+                    </div>
+                    <div>
+                        <span>적립</span>
+                        구매 시 300p
+                    </div>
+                </div>
+
+                <div class="shop_orderway">
+                    <h2>결제 수단</h2>
+                    <hr>
+
+                    <div class="order_select">
+                        <span>결제수단 선택</span>
+                        <div class="order_selecteasy">
+                            <button style='cursor:pointer;'>간편 결제</button>
+                            <label>
+                                <input type="radio" name="pay" checked>
+                                <span>카카오페이</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="pay">
+                                <span>네이버페이</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="pay">
+                                <span>토스</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="pay">
+                                <span>페이코</span>
+                            </label>
+                        </div>
+                        <div class="order_selectcard">
+                            <button style='cursor:pointer;'>신용카드</button>
+                        </div>
+                        <div class="order_selectphone">
+                            <button style='cursor:pointer;'>휴대폰</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop_orderprivacy">
+                    <span>개인정보 수집 제공</span>
+                    <hr>
+
+                </div>
+            </form>
+        </div>
     </main>
+
 
     <footer>
         <hr class="hr_footer">

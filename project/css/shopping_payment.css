@@ -21,6 +21,49 @@ body {
     font-family: S-CoreDream-3Light;
 }
 
+main {
+    margin-top: 50px;
+}
+
+main,
+section {
+    width: calc(1920px * .7);
+    padding: 20px;
+}
+
+/* ============================== */
+/* main part */
+
+main h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.cartselect_info i,
+.cartselect_info ul,
+.cartselect_info li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.cartselect_info i {
+    padding-right: 0;
+}
+
+main hr {
+    border: 0px;
+    height: 1px;
+    background-color: #CACACA;
+}
+
+/* ------------ 기본 세팅 --------------- */
+
+body {
+    font-family: S-CoreDream-3Light;
+}
+
 header,
 nav,
 main,
