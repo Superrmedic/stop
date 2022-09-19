@@ -531,6 +531,13 @@ main hr {
 
 .delivery_info1 {
     display: inline-block;
+    padding: 20px 20px 20px 0;
+}
+
+.delivery_infonav {
+    font-size: 14px;
+    padding: 5px 5px 5px 0;
+    color: grey;
 }
 
 .shop_deliinfo select {
@@ -540,4 +547,22 @@ main hr {
     border: 1px solid rgb(182, 182, 182);
     border-radius: 3px;
     padding: 5px;
+}
+
+.shop_defaultad {
+    display: flex;
+    width: 165px;
+    align-items: center;
+    margin: 0;
+}
+
+.shop_defaultad input {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.shop_defaultad span {
+    margin-left: 10px;
+    margin-bottom: 15px;
 }
