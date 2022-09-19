@@ -226,6 +226,7 @@ header>ul .login_info li a {
 }
 
 .category_bar ul.category>li>a {
+  display: block;
   color: black;
 }
 
