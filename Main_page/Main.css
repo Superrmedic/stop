@@ -75,21 +75,21 @@ header div a>img {
 /* ----------- .search 부분 --------------- */
 header div.search {
   flex: 1;
-  margin-right: 40px;
+  margin-left: 800px;
   display: flex;
   align-items: center;
 }
 
 header div.search input {
   all: unset;
-  width: 60%;
-  min-width: 400px;
-  margin-top: 50px;
+  width: 40%;
+  min-width: 300px;
+  margin-top: 55px;
   height: 40%;
   background-color: white;
   padding-left: 20px;
   box-sizing: border-box;
-  border: 2px solid #5ce5cf;
+  border: 3px solid #5ce5cf;
   border-radius: 30px;
 }
 
