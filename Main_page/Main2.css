@@ -342,35 +342,35 @@ main>.small_box>.small4 {
 } */
 
 main #Btn {
-    position: fixed;
-    left: -9999px;
+  position: fixed;
+  left: -9999px;
 }
 
 main .clickImage {
-    display: none;
+  display: none;
 }
 
 main .labelBtn {
-    justify-content: center;
+  justify-content: center;
 }
 
 
 main label,
-#Btn:checked ~ .clickImage,
+#Btn:checked~.clickImage,
 main .clickImage img {
-    display: flex;
+  display: flex;
 }
 
 main label img {
-    cursor: pointer;
-    width: 2em;
-    height: 2em;
-    margin-bottom: 6px;
-    z-index: 1;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  margin-bottom: 6px;
+  z-index: 1;
 }
 
 main label img:hover {
-    opacity: .7;   
+  opacity: .7;
 }
 
 .cost {
@@ -559,8 +559,8 @@ footer .under_menu1 {
 }
 
 footer .under_menu1>li {
-    margin: 0 50px;
-    display: flex;
+  margin: 0 50px;
+  display: flex;
 }
 
 footer .under_menu1 a,
@@ -570,15 +570,15 @@ footer .info button {
 }
 
 footer .info {
-    font-size: 12px;
-    width: 1450px;
-    margin: 40px auto 0 auto;
-    line-height: 150%;
-    padding-bottom: 40px;
+  font-size: 12px;
+  width: 1450px;
+  margin: 40px auto 0 auto;
+  line-height: 150%;
+  padding-bottom: 40px;
 }
 
 footer .info>p {
-    text-align: end;
+  text-align: end;
 }
 
 footer ul>li>button {
@@ -588,11 +588,11 @@ footer ul>li>button {
 }
 
 footer .icon {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 footer .icon a {
-    margin: 1em;
-    margin-top: -50px;
+  margin: 1em;
+  margin-top: -50px;
 }

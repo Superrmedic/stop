@@ -15,7 +15,6 @@
         <a href="../sign_on/html/welcome.html">지금 가입하고 적립금 500원 받아가세요!!
         </a>
     </div>
-
     <header>
         <div class="logo">
             <h1>
@@ -30,7 +29,7 @@
         <ul class="login">
             <li class="mypage">
                 <ul class="login_info">
-                    <li><a href="">MY PAGE</a></li>
+                    <li><a href="../project/mypage.html">MY PAGE</a></li>
                     <li><a href="../sign_on/html/welcome.html">로그인</a></li>
                     <li><a href="../sign_on/html/terms_agree.html">회원가입</a></li>
                 </ul>
@@ -39,7 +38,6 @@
             <li class="like"><a href="../project/shopping_like.html" class="go_login">좋아요</a></li>
         </ul>
     </header>
-
     <nav class="category_bar">
         <div>
             <ul class="category">
@@ -48,16 +46,16 @@
                 <li class="cate_New"><a href="#New">NEW</a></li>
                 <li class="cate_Acc"><a href="">ACC</a>
                     <ul>
-                        <li><a href="">그립톡</a></li>
-                        <li><a href="">핸드폰 케이스</a></li>
-                        <li><a href="">키링</a></li>
+                        <li><a href="../project/catg_page.html">그립톡</a></li>
+                        <li><a href="../project/catg_page.html">핸드폰 케이스</a></li>
+                        <li><a href="../project/catg_page.html">키링</a></li>
                     </ul>
                 </li>
                 <li class="cate_Kids"><a href="">KIDS</a>
                     <ul>
-                        <li><a href="">봉제 인형</a></li>
-                        <li><a href="">스포츠완구</a></li>
-                        <li><a href="">미술놀이</a></li>
+                        <li><a href="../project/catg_page.html">봉제 인형</a></li>
+                        <li><a href="../project/catg_page.html">스포츠완구</a></li>
+                        <li><a href="../project/catg_page.html">미술놀이</a></li>
                     </ul>
                 </li>
                 <li class="cate_Toy"><a href="">고객지원</a>
@@ -76,10 +74,10 @@
                 <a href="#"><img src="./img/top_.png" alt="TOP" class="right_TOP"></a>
             </div>
             <div>
-                <a href="../jungsunzoo/html/faq.html"><img src="./img/qna.png" alt="FAQ" class="right_FAQ"></a>
+                <!-- <a href="../jungsunzoo/html/faq.html"><img src="./image/qna.png" alt="FAQ" class="right_FAQ"></a> -->
             </div>
             <div>
-                <a href="#" target="_blank"><img src="./img/kakao.png" alt="kakao" class="right_kakao"></a>
+                <!-- <a href="#" target="_blank"><img src="./image/kakao.png" alt="kakao" class="right_kakao"></a> -->
             </div>
         </div>
 
@@ -89,17 +87,18 @@
                 <h2>주문 상품</h2>
                 <hr>
                 <ul>
-                    <li>
+                    <li class="orderlist1">
                         <a href="./shopping_details.html">
-                            <image src="./img/bear_1.jpg" alt="극세사 쿼카 인형"></image>
+                            <image src="./img/bear_1.jpg" alt="극세사 쿼카 인형" class="oderlistimg"></image>
                         </a>
                         <span>극세사 쿼카 인형</span>
                         <span>1개</span>
                         <span>15,000원</span>
+                        <hr>
                     </li>
-                    <li>
+                    <li class="orderlist2">
                         <a href="./shopping_details.html">
-                            <image src="./img/smallbear2.png" alt="극세사 쿼카 키링"></image>
+                            <image src="./img/smallbear2.png" alt="극세사 쿼카 키링" class="oderlistimg"></image>
                         </a>
                         <span>극세사 쿼카 키링</span>
                         <span>1개</span>
@@ -259,18 +258,29 @@
                 <div class="shop_orderprivacy">
                     <span>개인정보 수집 제공</span>
                     <hr>
-
+                    <div>
+                        <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        <strong>결제 진행 필수 전체 동의</strong>
+                        <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        <a href="#">(필수) 개인정보 수집/이용 및 처리 동의</a>
+                        <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        <a href="#">(필수) 개인정보 제3자 제공 동의</a>
+                        <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        <a href="#">(필수) 전자지급 결제대행 서비스 이용약관 동의</a>
+                    </div>
+                    <button type="button" class="totalorderbutton">26,500원 결제하기</button>
                 </div>
             </form>
         </div>
     </main>
 
-
     <footer>
         <hr class="hr_footer">
         <div class="under">
             <ul class="under_menu1">
-                <li><a href="">PSYC소개</a></li>
+                <li><a
+                        href="https://image.musinsa.com/mfile_s01/2019/10/23/6bd8407bf6d5ceee8602e3fad4c3511f093523.jpg">PSYC소개</a>
+                </li>
                 <li><a href="">이용안내</a></li>
                 <li><a href="">개인정보처리방침</a></li>
                 <li><a href="">이용약관</a></li>
@@ -281,14 +291,22 @@
         <div>
             <hr class="hr_footer">
             <div class="info">
-                <strong>PSYC(주)</strong>
+                <strong>PSYC (주)</strong>
                 경기도 성남시 분당구 돌마로 46 KR 5층 <strong>대표자</strong> 하영권
                 <ul>
-                    <li><strong>고객만족센터 : </strong>031 - 1234 - 5678</li>
+                    <li><strong>고객센터 : </strong>031 - 1234 - 5678 / <strong>( 점심시간 : PM 1:20 ~ pm 2:20 )</strong></li>
+                    <li><strong> [ 입금 계좌 : 110-191-012012 / 예금주 : PSYC ] </strong></li>
                     <li><strong>FAX : </strong>031 - 9876 - 5432</li>
                     <li><strong>E-MAIL : </strong><button type="button">abcde@psyc.co.kr</button></li>
                 </ul>
-                <p>copytight (c) <strong>www.psyc.co.kr</strong> all rights reserved.</p>
+
+                <p>copyright (c) <strong>www.psyc.co.kr</strong> all rights reserved.</p>
+
+                <div class="icon">
+                    <a href="#"><img src="./img/icon_insta.jpg" alt="instagram" title="인스타그램"></a>
+                    <a href="#"><img src="./img/icon_youtube.jpg" alt="youtube" title="유튜브"></a>
+                    <a href="#"><img src="./img/icon_kakao.jpg" alt="kakaotalk" title="카카오톡"></a>
+                </div>
             </div>
         </div>
     </footer>
