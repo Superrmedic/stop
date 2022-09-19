@@ -432,28 +432,34 @@ footer .icon a {
 
 .shop_orderpg h2 {
     font-size: 18px;
-    padding: 15px;
+    padding: 0 0 15px 0px;
+}
+
+.borderhr {
+    border: 0px;
+    background-color: black;
+}
+
+.shop_orderlist {
+    padding: 20px;
 }
 
 .oderlistimg {
+    display: flex;
     padding: 10px;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
 }
 
 .orderlist1,
 .orderlist2 {
     display: flex;
-}
-
-.orderlist1 span {
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.orderlist2 span {
+.ordername1,
+.ordername2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 700px;
+    color: black;
 }
