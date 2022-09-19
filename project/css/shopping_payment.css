@@ -425,9 +425,11 @@ footer .icon a {
 
 /* ============================ */
 /* 결제 페이지 */
+/* 주문 상품 */
 .shop_orderpg {
     margin: 0 auto;
     width: calc(1920px * .6);
+    margin-bottom: 40px;
 }
 
 .shop_orderpg h2 {
@@ -435,31 +437,107 @@ footer .icon a {
     padding: 0 0 15px 0px;
 }
 
-.borderhr {
+main hr {
     border: 0px;
     background-color: black;
 }
 
-.shop_orderlist {
-    padding: 20px;
+.shop_oderinfo,
+.shop_deliinfo,
+.shop_orderlist,
+.shop_ordercoupon,
+.shop_orderpay,
+.shop_orderway,
+.shop_orderprivacy {
+    margin-bottom: 60px;
 }
 
 .oderlistimg {
     display: flex;
-    padding: 10px;
     width: 110px;
     height: 110px;
+    padding: 20px 20px 20px 0;
+}
+
+.shop_ordername,
+.shop_orderphone,
+.shop_ordermail {
+    margin: 20px 0 20px 5px;
 }
 
 .orderlist1,
 .orderlist2 {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgb(235, 235, 235);
 }
 
 .ordername1,
 .ordername2 {
     display: flex;
-    width: 700px;
+    width: 800px;
     color: black;
+}
+
+.orderlistimgbox {
+    display: flex;
+}
+
+.order_number {
+    width: 70px;
+}
+
+/* 주문자 정보 */
+.shop_oderinfo span {
+    display: inline-block;
+    width: 80px;
+}
+
+.email1 {
+    display: inline;
+}
+
+.shop_oderinfo input {
+    font-family: S-CoreDream-3Light;
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.shop_orderphone input {
+    width: 95px;
+}
+
+.shop_oderinfo select {
+    font-family: S-CoreDream-3Light;
+    width: 50px;
+    height: 40px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+}
+
+.email1 {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.shop_ordermail select {
+    width: 150px;
+}
+
+/* 배송 정보 */
+
+.delivery_info1 {
+    display: inline-block;
+}
+
+.shop_deliinfo select {
+    font-family: S-CoreDream-3Light;
+    width: 445px;
+    height: 40px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    padding: 5px;
 }

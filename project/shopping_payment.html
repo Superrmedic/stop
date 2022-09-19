@@ -38,6 +38,7 @@
             <li class="like"><a href="../project/shopping_like.html" class="go_login">좋아요</a></li>
         </ul>
     </header>
+
     <nav class="category_bar">
         <div>
             <ul class="category">
@@ -85,25 +86,27 @@
             <h1>주문/결제</h1>
             <div class="shop_orderlist">
                 <h2>주문 상품</h2>
-                <hr class="borderhr">
+                <hr>
                 <ul>
                     <li class="orderlist1">
-                        <a href="./shopping_details.html">
+                        <a href="./shopping_details.html" class="orderlistimgbox">
                             <image src="./img/bear_1.jpg" alt="극세사 쿼카 인형" class="oderlistimg"></image>
                         </a>
                         <div class="detailspan_name">
                             <span><a href="./shopping_details.html" class="ordername1">극세사 쿼카 인형</a></span>
                         </div>
-                        <span>1개</span>
+                        <span class="order_number">1개</span>
                         <span>15,000원</span>
                     </li>
                     <li class="orderlist2">
                         <a href="./shopping_details.html">
                             <image src="./img/smallbear2.png" alt="극세사 쿼카 키링" class="oderlistimg"></image>
                         </a>
-                        <span><a href="./shopping_details.html" class="ordername2">극세사 쿼카 키링</a></span>
-                        <span>1개</span>
-                        <span>9,000원</span>
+                        <div>
+                            <span><a href="./shopping_details.html" class="ordername2">극세사 쿼카 키링</a></span>
+                        </div>
+                        <span class="order_number">1개</span>
+                        <span>11,000원</span>
                     </li>
                 </ul>
             </div>
@@ -112,52 +115,60 @@
                 <div class="shop_oderinfo">
                     <h2>주문자 정보</h2>
                     <hr>
-                    <label>
-                        <span>이름</span>
-                        <input name="name" maxlength="10" value="유미현">
-                    </label>
+                    <div class="shop_ordername">
+                        <label>
+                            <span>이름</span>
+                            <input name="name" maxlength="10" value="유미현">
+                        </label>
+                    </div>
 
-                    <label>
-                        <span>휴대폰</span>
-                        <select name="phone1">
-                            <option value disabled>선택</option>
-                            <option value="0">010</option>
-                            <option value="1">011</option>
-                            <option value="2">016</option>
-                            <option value="3">017</option>
-                            <option value="4">018</option>
-                            <option value="5">019</option>
-                        </select>
-                        <input type="tell" placeholder="입력해주세요" size="6" maxlength="9" value="8282-5353">
-                    </label>
+                    <div class="shop_orderphone">
+                        <label>
+                            <span>휴대폰</span>
+                            <select name="phone1">
+                                <option value disabled>선택</option>
+                                <option value="0">010</option>
+                                <option value="1">011</option>
+                                <option value="2">016</option>
+                                <option value="3">017</option>
+                                <option value="4">018</option>
+                                <option value="5">019</option>
+                            </select>
+                            <input type="tell" placeholder="입력해주세요" size="6" maxlength="9" value="8282-5353"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        </label>
+                    </div>
 
-                    <label>
-                        <span>이메일</span>
-                        <input type="email" value="greencomputer" placeholder="이메일" maxlength="20" title="이메일 앞부분">
-                        <span name="email1">@</span>
-                        <select>
-                            <option value disabled>선택해 주세요</option>
-                            <option value="0">naver.com</option>
-                            <option value="1">hanmail.net</option>
-                            <option value="2">daum.net</option>
-                            <option value="3">gmail.com</option>
-                            <option value="4">kakao.com</option>
-                            <option value="5">직접 입력</option>
-                        </select>
-                    </label>
+                    <div class="shop_ordermail">
+                        <label>
+                            <span>이메일</span>
+                            <input type="email" value="greencomputer" placeholder="이메일" maxlength="20" title="이메일 앞부분">
+                            <div class="email1">@</div>
+                            <select>
+                                <option value disabled>선택해 주세요</option>
+                                <option value="0">naver.com</option>
+                                <option value="1">hanmail.net</option>
+                                <option value="2">daum.net</option>
+                                <option value="3">gmail.com</option>
+                                <option value="4">kakao.com</option>
+                                <option value="5">직접 입력</option>
+                            </select>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="shop_deliinfo">
                     <h2>배송 정보</h2>
-                    <div>변경</div>
                     <hr>
 
                     <div>
-                        <span>배송지</span>
-                        <ul>
-                            <li>경기도 성남시 분당구 돌마로 46, 5층</li>
-                            <li>유미현, 010-8282-5353</li>
-                        </ul>
+                        <div class="delivery_info1">
+                            <span>배송지</span>
+                            <ul>
+                                <li>경기도 성남시 분당구 돌마로 46, 5층</li>
+                                <li>유미현, 010-8282-5353</li>
+                            </ul>
+                        </div>
 
                         <label>
                             <div class="shop_defaultad">
