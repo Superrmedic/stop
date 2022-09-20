@@ -75,21 +75,21 @@ header div a>img {
 /* ----------- .search 부분 --------------- */
 header div.search {
   flex: 1;
-  margin-right: 40px;
+  margin-left: 800px;
   display: flex;
   align-items: center;
 }
 
 header div.search input {
   all: unset;
-  width: 60%;
-  min-width: 400px;
-  margin-top: 50px;
+  width: 40%;
+  min-width: 300px;
+  margin-top: 55px;
   height: 40%;
   background-color: white;
   padding-left: 20px;
   box-sizing: border-box;
-  border: 2px solid #5ce5cf;
+  border: 3px solid #5ce5cf;
   border-radius: 30px;
 }
 
@@ -141,23 +141,25 @@ header>ul .login_info li a {
   display: block;
 }
 
+/* ----------- .mypage 부분 --------------- */
 .mypage {
   position: relative;
-  background: url(../../Main_page/image/user\ icon-1.png) center/80% 80% no-repeat;
+  background: url(../Main_page/image/user\ icon-1.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 10px;
 }
 
 .mypage:hover {
-  background: url(../../Main_page/image/user\ icon\ hover.png) center/80% 80% no-repeat;
+  background: url(./image/user\ icon\ hover.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 10px;
 }
 
+/* ----------- .cart 부분 --------------- */
 .cart {
-  background: url(../../Main_page/image/cart.png) center/80% 80% no-repeat;
+  background: url(../Main_page/image/cart.png) center/80% 80% no-repeat;
   margin-top: 5px;
   margin-left: 10px;
   width: 55px;
@@ -165,15 +167,16 @@ header>ul .login_info li a {
 }
 
 .cart:hover {
-  background: url(../../Main_page/image/cart\ hover.png) center/80% 80% no-repeat;
+  background: url(./image/cart\ hover.png) center/80% 80% no-repeat;
   margin-top: 5px;
   margin-left: 10px;
   width: 55px;
   height: 55px;
 }
 
+/* ----------- .like 부분 --------------- */
 .like {
-  background: url(../../Main_page/image/heart.png) center/80% 80% no-repeat;
+  background: url(../Main_page/image/heart.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 12px;
@@ -181,7 +184,7 @@ header>ul .login_info li a {
 }
 
 .like:hover {
-  background: url(../../Main_page/image/heart_hover.png) center/80% 80% no-repeat;
+  background: url(./image/heart_hover.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 12px;
@@ -199,7 +202,6 @@ header>ul .login_info li a {
 }
 
 .category_bar>div>ul.category {
-  /* background-color: #ffe4c4; */
   display: flex;
   justify-content: center;
   border-radius: 5px;
@@ -211,7 +213,6 @@ header>ul .login_info li a {
   text-align: center;
   font-weight: bold;
   font-size: 19px;
-
 }
 
 .category_bar ul>li li:hover {
@@ -277,15 +278,15 @@ header>ul .login_info li a {
 .category_bar ul.category ul>li:hover>a {
   color: white;
 }
-/* ----------------inner--------------------- */
+/* ----------------main시작--------------------- */
+
+/* ----------- .fixed-banner 부분 --------------- */
 main .fixed-banner {
   display: flex;
   position: relative;
 }
 
-main>.fixed-banner a>.right_TOP,
-main>.fixed-banner a>.right_FAQ,
-main>.fixed-banner a>.right_kakao {
+main>.fixed-banner a>.right_TOP {
   position: fixed;
   width: 40px;
   height: 40px;
@@ -302,10 +303,43 @@ main>.fixed-banner a>.right_TOP {
 main>.fixed-banner a>.right_FAQ {
   bottom: 60px;
 }
+
+main #Btn {
+  position: fixed;
+  left: -9999px;
+}
+
+main .clickImage {
+  display: none;
+}
+
+main .labelBtn {
+  justify-content: center;
+}
+
+
+main label,
+#Btn:checked~.clickImage,
+main .clickImage img {
+  display: flex;
+}
+
+main label img {
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  margin-bottom: 6px;
+  z-index: 1;
+}
+
+main label img:hover {
+  opacity: .7;
+}
+
 main{
   height: 60%;
 }
-
+/* --------------------inner box------------------------- */
 .inner_box{
     width: 550px;
     height: 600px;
@@ -316,7 +350,6 @@ main{
     align-content: space-evenly;
     justify-content: center;
   }
-
 
 .inner_title{
   width: 600px;
@@ -329,7 +362,8 @@ main{
   background-color: #5ce5cf
 }
 
-/* ----------------inner_box까지 ------------------ */
+
+/* ----------------inner box 자손-------------------- */
 .req_info_title{
   font-weight: bold;
   font-size: 2em;
@@ -351,13 +385,17 @@ label{
 
 input{
   width: 150px;
-  margin-left: 10px;
+  margin-left: 15px;
   border-top: 0;
   border-bottom: 1px solid;
   border-left: 0;
   border-right: 0;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.inner_box select{
+  height: 1.4rem;
 }
 
 .gender{
@@ -379,6 +417,22 @@ input{
   border: 2px solid #5ce5cf;
   color: black;
   /* color: #5ce5cf; */
+}
+
+.gogo{
+  position: relative;  
+}
+
+.gogo input{
+  height: 3rem;
+  position: absolute;
+  left: calc(50% - 75px);
+  margin-top: 40px;
+  margin-left: 0;
+  color: darkslateblue;
+  background-color:transparent;  
+  border: 2px solid #5ce5cf
+  
 }
 
 /* -----------------footer부분-------------------- */

@@ -13,19 +13,25 @@ header,
 footer{
     height: 25vh;
 }
+
 /* ---------------------------------------------------- */
 header{
-    height: 25vh;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(5, 1fr);
 }
 
 .header{
     background-image: url(../../Main_page/image/main_banner.png);
-    background-size: 100% 100%;
-    grid-column: 4 / 5;
-    grid-row: 1 / 6;
+    
+    grid-column: 6 / 8;
+    grid-row: 2 / 6;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../Main_page/image/main_banner.png);
 }
 
 
@@ -69,7 +75,7 @@ main div{
 .box1,
 .box2,
 .box3{
-    grid-row: 6 / 10;
+    grid-row: 6 / 12;
     background-image: url(../img/banner.png);
     background-size: 100% 100%;
     margin-right: 5px;
@@ -93,6 +99,11 @@ main div{
     font-size: .8rem;
     grid-column: 8 / 9;
     grid-row: 13 / 14;
+}
+
+.go_to_login>button{
+    width: 100px;
+    height: 30px;
     background-color: #5ce5cf;
 }
 
@@ -103,13 +114,13 @@ footer {
     margin-top: 5em;
     width: 100%;
     background-color: hsla(53, 100%, 98%, 0.955);
-  }
-  
-  footer .hr_footer {
+}
+
+footer .hr_footer {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  
-  footer>.under {
+}
+
+footer>.under {
     width: 1450px;
     margin: 5px auto;
     display: flex;

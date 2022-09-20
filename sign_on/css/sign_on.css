@@ -25,10 +25,6 @@ footer {
   min-width: 1500px;
 }
 
-textarea {
-  resize: none;
-}
-
 
 ul {
   list-style: none;
@@ -281,7 +277,6 @@ header>ul .login_info li a {
 .category_bar ul.category ul>li:hover>a {
   color: white;
 }
-
 /* ----------------inner--------------------- */
 main .fixed-banner {
   display: flex;
@@ -310,13 +305,13 @@ main>.fixed-banner a>.right_FAQ {
 
 /* ---------------------------------------- */
 
-.inner_box {
-  width: 550px;
-  height: 600px;
-  margin: 5px auto;
-}
-
-.inner_title {
+.inner_box{
+    width: 550px;
+    height: 600px;
+    margin: 5px auto;
+  }
+  
+  .inner_title{
   text-align: center;
   font-size: 32px;
   padding: 5px;
@@ -326,35 +321,40 @@ main>.fixed-banner a>.right_FAQ {
   background-color: #5ce5cf
 }
 
-.flex-terms {
-  width: 100%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.flex-terms{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#terms_text {
-  width: 99%;
-  height: 100px;
+#terms_text{
+    width: 99%;
+    height: 100px;
 }
 
-
-.terms_text {
-  overflow: scroll;
-  margin: auto;
+.terms_text{
+    overflow: scroll;
+    margin: auto;
 }
 
-
-
-.agree_btn {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+.agree_btn{
+    height: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  
+  .Y{
+    width: 300px;
+    height: 100%;
+    background-color: #5ce5cf;
+    
 }
 
 .checking_term,
-.all_agree {
+.all_agree{
   font-weight: bold;
 }
 
