@@ -7,7 +7,7 @@
 }
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     list-style: none;
     scroll-behavior: smooth;
@@ -460,7 +460,7 @@ form span {
     display: flex;
     width: 110px;
     height: 110px;
-    padding: 20px 20px 20px 0;
+    padding: 20px 20px 20px 5px;
 }
 
 .shop_ordername,
@@ -488,7 +488,8 @@ form span {
 }
 
 .order_number {
-    width: 70px;
+    width: 100px;
+    margin-left: 30px;
 }
 
 /* 주문자 정보 */
@@ -580,12 +581,6 @@ form span {
     margin-bottom: 40px;
 }
 
-.shop_orderpay {
-    margin: 0;
-    width: calc(1920px * .2);
-    margin-bottom: 40px;
-    border: 1px solid black;
-}
 
 .order_coupon {
     padding: 20px 20px 20px 0;
@@ -621,9 +616,9 @@ form span {
 }
 
 .order_point div {
-    margin-left: 115px;
     font-size: 13px;
     padding: 5px;
+    margin-left: 108px;
 }
 
 .order_point strong {
@@ -637,11 +632,103 @@ form span {
 }
 
 /* 쿠폰 & 결제 div */
+.orderalldiv {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
 
-.couponpaydiv {
+.couponpaydiv hr,
+.shop_orderway hr {
+    width: 95%;
+    margin: 0;
+}
+
+/* 결제 수단 선택 */
+
+.order_select {
     display: flex;
 }
 
-.couponpaydiv hr {
-    width: 95%;
+/* 결제 금액 선택 */
+
+.shop_orderpay {
+    margin: 0;
+    width: calc(1920px * .2);
+    margin-bottom: 40px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 2%;
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+}
+
+.shop_orderpay hr {
+    border: 0px;
+    height: 1px;
+    background-color: #dfdfdf;
+}
+
+.order_allpay,
+.order_deliverypay,
+.order_couponpay,
+.order_pointpay,
+.order_totalpay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop_orderpay div {
+    font-size: 14px;
+    padding: 3px 3px 3px 0;
+}
+
+.shop_orderpay span {
+    font-size: 18px;
+}
+
+.order_totalpay div {
+    margin-top: 10px;
+    font-size: 21px;
+}
+
+.order_totalpay div strong {
+    color: #5ce5cf;
+    font-size: 24px;
+}
+
+.order_pointbox {
+    display: flex;
+    justify-content: right;
+}
+
+.order_pointbox div {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.order_box {
+    width: 30px;
+    border-radius: 5px;
+    background-color: #5ce5cf;
+    text-align: center;
+    color: white;
+}
+
+/* 개인정보 수집 제공 */
+
+.orderprivacybox {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop_orderprivacy button {
+    padding: 10px;
+    width: 250px;
+    color: white;
+    border-radius: 3px;
+    background-color: #5ce5cf;
+    font-size: 16px;
+    font-family: S-CoreDream-3Light;
+    border: 0;
 }
