@@ -453,7 +453,7 @@ form span {
 .shop_orderpay,
 .shop_orderway,
 .shop_orderprivacy {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .oderlistimg {
@@ -536,7 +536,7 @@ form span {
 
 .delivery_info1 {
     display: inline-block;
-    padding: 20px 20px 10px 0;
+    padding: 20px 30px 30px 0;
 }
 
 .delivery_infonav {
@@ -578,7 +578,7 @@ form span {
 .shop_orderway {
     margin: 0;
     width: calc(1920px * .4);
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 
@@ -649,6 +649,7 @@ form span {
 
 .order_select {
     display: flex;
+    height: 500px;
 }
 
 /* 결제 금액 선택 */
@@ -661,6 +662,8 @@ form span {
     border-radius: 2%;
     padding: 20px;
     background-color: rgb(250, 250, 250);
+    position: sticky;
+    top: 50px;
 }
 
 .shop_orderpay hr {
