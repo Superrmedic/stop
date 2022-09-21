@@ -89,12 +89,12 @@ header {
     flex-direction: row;
     padding: 10px;
     margin-top: 20px;
-    /* background-color: #5ce5cf; */
+    /* background-color: #ff798c; */
 }
 
 .top_banner {
     display: flex;
-    background-color: #5ce5cf;
+    background-color: #ff798c;
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -134,7 +134,7 @@ header div.search input {
     background-color: white;
     padding-left: 20px;
     box-sizing: border-box;
-    border: 2px solid #5ce5cf;
+    border: 2px solid #ff798c;
     border-radius: 30px;
 }
 
@@ -171,7 +171,7 @@ header ul>.mypage:hover>.login_info {
 
 header ul>.mypage>.login_info li:hover {
     font-weight: bold;
-    background-color: #5ce5cf;
+    background-color: #ff798c;
     transition: 1s;
 }
 
@@ -261,7 +261,7 @@ header>ul .login_info li a {
 
 .category_bar ul>li li:hover {
     font-weight: bold;
-    background-color: #5ce5cf;
+    background-color: #ff798c;
     transition: 1s;
 }
 
@@ -275,11 +275,11 @@ header>ul .login_info li a {
 }
 
 .category_bar ul.category>li:hover>a {
-    color: #5ce5cf;
+    color: #ff798c;
 }
 
 .category_bar ul>li:hover {
-    border-bottom-color: #5ce5cf;
+    border-bottom-color: #ff798c;
 }
 
 .category_bar>div>ul.category>li {
@@ -451,8 +451,7 @@ form span {
 .shop_orderlist,
 .shop_ordercoupon,
 .shop_orderpay,
-.shop_orderway,
-.shop_orderprivacy {
+.shop_orderway {
     margin-bottom: 100px;
 }
 
@@ -578,7 +577,7 @@ form span {
 .shop_orderway {
     margin: 0;
     width: calc(1920px * .4);
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 
@@ -622,7 +621,7 @@ form span {
 }
 
 .order_point strong {
-    color: #5ce5cf;
+    color: #ff798c;
 }
 
 .order_coupon button:hover,
@@ -646,18 +645,77 @@ form span {
 }
 
 /* 결제 수단 선택 */
+.shop_orderway {
+    height: 220px;
+}
 
 .order_select {
     display: flex;
-    height: 500px;
+    padding: 20px 20px 20px 0;
+    position: relative;
+}
+
+.paycontainer {
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.paycontainer_list {
+    position: absolute;
+    left: 100px;
+    padding: 20px;
+}
+
+.paycontainer_list span {
+    padding: 0 5px 0 5px;
+}
+
+.paycontainer_list input {
+    position: relative;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.smilepay {
+    margin-left: 26px;
+}
+
+.order_select button {
+    padding: 7px 10px 10px 10px;
+    width: 195px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(248, 248, 248);
+    border-radius: 3px;
+    font-family: S-CoreDream-3Light;
+}
+
+.order_selecteasy button {
+    margin-left: 30px;
+}
+
+.paycontainerfirst,
+.paycontainersecond {
+    padding: 10px;
+}
+
+.order_select label {
+    margin-right: 15px;
+}
+
+.order_select button:hover {
+    background-color: rgb(224, 224, 224);
+    color: rgb(46, 46, 46);
 }
 
 /* 결제 금액 선택 */
+.delivery_container {
+    position: relative;
+    top: -50px;
+}
 
 .shop_orderpay {
     margin: 0;
     width: calc(1920px * .2);
-    margin-bottom: 40px;
     border: 1px solid rgb(233, 233, 233);
     border-radius: 2%;
     padding: 20px;
@@ -696,7 +754,7 @@ form span {
 }
 
 .order_totalpay div strong {
-    color: #5ce5cf;
+    color: #ff798c;
     font-size: 24px;
 }
 
@@ -713,16 +771,21 @@ form span {
 .order_box {
     width: 30px;
     border-radius: 5px;
-    background-color: #5ce5cf;
+    background-color: #ff798c;
     text-align: center;
     color: white;
 }
 
 /* 개인정보 수집 제공 */
-
 .orderprivacybox {
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 20px 0;
+}
+
+.orderbuttonpar {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .shop_orderprivacy button {
@@ -730,8 +793,40 @@ form span {
     width: 250px;
     color: white;
     border-radius: 3px;
-    background-color: #5ce5cf;
+    background-color: #ff798c;
     font-size: 16px;
     font-family: S-CoreDream-3Light;
     border: 0;
+    font-weight: bold;
+}
+
+.orderprivacflex1 {
+    margin-bottom: 20px;
+}
+
+.orderprivacflex {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.orderprivacflex1 i {
+    color: #ff798c;
+    font-size: 24px;
+}
+
+.orderprivacflex i {
+    color: #ffdde2;
+}
+
+.shop_orderprivacy strong {
+    color: black;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.shop_orderprivacy a {
+    color: black;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 8px;
 }
